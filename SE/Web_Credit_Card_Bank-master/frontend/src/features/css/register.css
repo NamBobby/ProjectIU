@@ -1,0 +1,130 @@
+.regis-font-wc {
+    margin-top: 2vh;
+    position: absolute;
+    top:1vh;
+    left: 45vw;
+    text-align: center;
+    font-weight:500;
+}
+
+.regis-font-iu {
+    margin-top: 6vh;
+}
+
+.regis-auth-form {
+    background-color: rgb(252, 186, 252, 0.4);
+    border-radius: 22px;
+    height: 75vh;
+    border:  1px solid rgb(252, 186, 252);
+    box-shadow: 4px 4px 8px rgba(41, 29, 29, 0.2);
+}
+.register-button {
+    background-color: blueviolet;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    width: 148px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    /* height: 6vh; */
+    border: 0px solid;
+    border-radius: 50px;
+}
+
+.register-row {
+    flex-wrap: nowrap;
+
+}
+
+.register-title {
+    text-align: left;
+    padding-top: 5px;
+}
+
+.select-option {
+    border-radius: 8px;
+    margin-bottom: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 6px;
+}
+
+.regis-input-field{ 
+    width: 100%;
+    height: 4vh;
+    font-size: 17px;
+    /* padding: 10px; */
+    border-radius: 23px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+.regis-icon-field {
+    /* padding: 3%; */
+    /* padding-top: 2%; */
+    font-size: 17px;
+    color: white;
+    background-color: none;
+    min-width: 40px;
+    text-align: center;
+}
+
+.regis-input-group {
+    background-color: white;
+    border-radius: 23px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.regis-err-msg {
+    height: 3vh;
+    color: red;
+    text-align: left;
+}
+.register-label {
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 12px;
+    text-align: left;
+}
+
+.regis-select-field { 
+    text-align: left; 
+    margin-bottom: 1.2vh;
+}
+
+.regis-margin-top {
+    padding-top: 15px;
+    
+}
+
+.bottom p {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bottom p a {
+    font-size: 1.2em;
+    text-decoration: none;
+    font-style: normal;
+    color: grey;
+}
+@media screen  and (max-width: 425px){
+    
+}
+
+@media screen  and (max-width: 375px){
+
+    
+}
+
+@media screen  and (max-width: 320px){
+    
+}
+
+

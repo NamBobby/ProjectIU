@@ -1,0 +1,61 @@
+version: "3"
+
+services:
+  web:
+    container_name: hcmiu_se_web
+    build: 
+      context: ./frontend
+    env_file: 
+      - ./frontend/.env
+    ports:
+      - "8002:3000"
+    restart: always
+    depends_on:
+      - backend
+    links:
+      - backend
+    volumes: 
+      - ./frontend:/app
+      - /app/node_modules
+    command: 'yarn start'
+
+  database:
+    container_name: hcmiu_se_db
+    image: mysql:5.7
+    restart: always
+    environment: 
+      MYSQL_USER: nguyenvandat
+      MYSQL_DATABASE: banking
+      MYSQL_PASSWORD: hcmiuse@14
+      MYSQL_ROOT_PASSWORD: hcmiuse@14
+    volumes:
+      - db_data:/var/lib/mysql
+    ports: 
+      - "3308:3306"
+
+  backend: 
+    container_name: hcmiu_se_backend
+    build: 
+      context: ./Service
+    restart: always
+    env_file: 
+      - ./Service/.env
+    ports:
+      - "8000:5000"
+    command: bash -c 'while !</dev/tcp/db/3306; do sleep 1; done; npm start'
+    depends_on: 
+      - database
+    links: 
+      - database
+    volumes: 
+      - ./Service:/app
+      - /app/node_modules
+    command: 'yarn start'
+
+  
+
+volumes: 
+  db_data: 
+
+
+

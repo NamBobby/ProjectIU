@@ -1,0 +1,134 @@
+.form {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-center {
+    background-image: url(".//login-background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.forgot-btn {
+    color: #5A466E;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+}
+.forgot-background {
+    background-image:  url("./forgot-background.png") !important;
+}
+
+.display-flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-align {
+    align-items: center;
+}
+
+::placeholder {
+    color: grey;
+    text-align: left;
+    font-style: italic;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-style: italic;
+    color: grey;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-style: italic;
+    color: grey;
+}
+
+.wrong-input {
+    border: 1px solid red;
+}
+
+
+.reset-margin {
+    margin: 0 auto;
+}
+
+.reset-padding {
+    padding: 0 auto;
+}
+
+.err-msg {
+    font-size: 16px;
+    color: red;
+
+}
+.user-home-func-background {
+    background-image: url('./user-home-func-bg.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.transfer-text {
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.font {
+    color:#8669A2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2vh;
+
+}
+
+input {
+    font-size: 20px;
+}
+body {
+    font-size: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: end;
+}
+
+.margin-left-payment {
+    margin-left: 0.8rem;
+}
+
+.header-bank-font {
+    color: #9960D2 !important;
+    font-weight: bold;
+}
+
+.i-t-img {
+    background-image: url("./transfer.png");
+    background-repeat: no-repeat;
+}
+
+.custom-tag {
+    /* height: 20vh; */
+    border-radius: 23px;
+}
+
+.change-pass-bg {
+    background-image: url('./change-pass-bg.png');
+}
+
+.select-option {
+    background-color: none;
+}

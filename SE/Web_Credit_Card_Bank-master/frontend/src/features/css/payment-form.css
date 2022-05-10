@@ -1,0 +1,122 @@
+.full-view {
+    height: 100vh;
+}
+
+.transform-header {
+    height: 10vh;
+}
+.transform-body {
+    height: 95vh;
+    
+}
+
+.payment-transfer-background {
+    background-color: rgba(65, 26, 105, 0.4);
+}
+
+.input-background {
+    margin-bottom: 2vh;
+    background-color: rgb(243, 241, 245, 0.8);
+    border-radius: 20px;
+    /* background-color: white; */
+}
+
+.payment-input-field {
+    width: 90%;
+    text-align: left;
+    height: 5vh;
+    font-size: 1rem;
+    font-weight: 400;
+    /* padding: 10px; */
+    border-radius: 9px;
+    border: 1px solid white;
+}
+
+.otp-button {
+    background-color: linear-gradient(direction, #5A466E, #963DED);
+
+}
+.alert-height {
+    height: 4vh;
+    padding: 0px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    
+}
+
+.btn-grad {background-image: linear-gradient(to right, #5A466E, #963DED, #5A466E)}
+.btn-grad {
+   text-align: center;
+   font-weight: bold;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.form-check-input {
+    font-size: 13px;
+    margin-right: 3px;
+}
+.form-check-label {
+    color: #5A466E;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
+
+.payment-input-group {
+    margin-top: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: end;
+    width: 98%;
+}
+
+.otp-check {
+    width: 63% !important;
+}
+
+.width-balance {
+    width: 95%;
+}
+
+.payment-err {
+    height: 15px;
+}
+
+.font-payment {
+    color: #5A466E;
+    font-weight:700;
+}
+.payment-btn-submit {
+    margin-top: 2px;
+}
+
+@media screen  and (max-width: 425px){
+    .transform-body {
+        /* height: 100vh; */
+        /* display: block; */
+        overflow: scroll;
+    }
+}
+
+@media screen  and (max-width: 375px){
+}
+
+@media screen  and (max-width: 320px){
+    .mb-4 {
+        margin-bottom: 0.7rem !important ;
+    }
+    .btn-grad {
+        font-size: 0.8rem;
+    }
+}
+
