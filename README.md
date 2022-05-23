@@ -11,7 +11,7 @@ OOP : Object-Oriented Programming Project
 
 Project OOP helps 2nd year students understand what is object-oriented through a simple application or game
 
-Topic: Balloon Vs Horn Game
+Topic: Balloon Vs Cactus Game
 
 PDM : Principles of Database Management Project 
 
