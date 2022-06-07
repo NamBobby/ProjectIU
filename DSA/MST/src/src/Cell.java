@@ -10,7 +10,6 @@ package src;
  * 
  * Note: this class was made specifically for this version of Minesweeper. 
  * 		 As such, coordinates are between 0 and 15.
- * @author jeffreyxiao
  *
  */
 public class Cell {

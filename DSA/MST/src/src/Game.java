@@ -1,4 +1,4 @@
-package src;
+ package src;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -8,7 +8,6 @@ import javax.swing.*;
 /**
  * The main Game class that specifies the frame and widgets of the GUI
  * 
- * @author jeffreyxiao
  *
  */
 public class Game extends JPanel implements Runnable {
@@ -40,11 +39,12 @@ public class Game extends JPanel implements Runnable {
 		frame.add(myBoard, BorderLayout.CENTER);
 		
 		//Control panel
-		final JPanel control_panel = new JPanel();
-		frame.add(control_panel, BorderLayout.NORTH);  
-		
-		//Label showing current number of flags remaining
-        control_panel.add(flagLabel);
+		final JMenuBar menuBar = new JMenuBar();
+		frame.setJMenuBar(menuBar);
+		menuBar.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+		menuBar.setLayout(new GridLayout(1, 4, 5, 3));
+		JMenu file = new JMenu("File");
+		menuBar.add(file);
         
         //Button allowing user to reset game and start over
         final JButton reset = new JButton("Reset Game");
@@ -53,25 +53,27 @@ public class Game extends JPanel implements Runnable {
             	court.reset();
             }
         });
-        control_panel.add(reset);
+        menuBar.add(reset);
         
         //Button that allows user to import text file of game
-        final JButton openGame = new JButton("Open");
+        final JMenuItem openGame = new JMenuItem("Open");
+        openGame.setIconTextGap(33);
         openGame.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             	court.importGameStateMediate();
             }
         });
-        control_panel.add(openGame);
+        file.add(openGame);
         
         //Button that allows user to export text file of game
-        final JButton save = new JButton("Save");
+        final JMenuItem save = new JMenuItem("Save");
+        save.setIconTextGap(33);
         save.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             	court.exportGameState();
             }
         });
-        control_panel.add(save);
+        file.add(save);
         
         //Button that allows user to undo history of moves
         final JButton undo = new JButton("Undo");
@@ -80,10 +82,13 @@ public class Game extends JPanel implements Runnable {
             	court.undo();
             }
         });
-        control_panel.add(undo);
+        menuBar.add(undo);
         
         //Label showing the current time spent on the puzzle
-        control_panel.add(timerLabel);
+        menuBar.add(timerLabel);
+        
+      //Label showing current number of flags remaining
+        menuBar.add(flagLabel);
 		
         // Put the frame on the screen
         frame.pack();

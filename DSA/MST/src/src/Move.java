@@ -9,7 +9,6 @@ package src;
  *  1 = User recently flagged a cell
  *  2 = User recently unflagged a cell
  *   
- * @author jeffreyxiao
  *
  */
 public class Move {

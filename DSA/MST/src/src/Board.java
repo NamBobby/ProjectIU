@@ -16,7 +16,6 @@ import java.util.Random;
  *  Note: this class was made specifically for this version of Minesweeper. 
  * 		 As such, coordinates are between 0 and 15. Dimensions of board are 16x16.
  * 		 By default, set to 30 total bombs.
- * @author jeffreyxiao
  *
  */
 public class Board {

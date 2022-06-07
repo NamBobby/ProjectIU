@@ -21,7 +21,6 @@ import javax.swing.*;
  * bombs interact with one another. As you will see, most of the functions depend and
  * rely closely on each other.
  * 
- * @author jeffreyxiao
  */
 public class GameCourt extends JPanel {
 
