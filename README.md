@@ -23,4 +23,8 @@ SE  : Software Engineering Project
 
 Project SE helps students make a complete software (at least 80%). Through any programming language, and at the same time make a well-organized report ready for the thesis
 
-Topic: CREDIT CARD FRAUD DETECTION
+WAD  : Web Application Developer project
+
+Project WAD helps students make a complete website (at least 80%). Through .NET programming language
+
+Topic: Beverage Website
