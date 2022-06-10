@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 18px;
+  height: 100vh;
+  background: rgb(71, 71, 71);
+  background: url(../img/bg.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 100vw;
+  overflow: hidden;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 15px;
+  grid-template-areas: "nav nav nav" "info info form";
+  grid-template-columns: 1fr 0.6fr 1.2fr;
+  grid-template-rows: 50px 1fr;
+}
+
+/* navbar */
+
+.navbar {
+  grid-area: nav;
+  background: rgb(6, 66, 166);
+  background: linear-gradient(
+    180deg,
+    rgb(116, 40, 27) 3%,
+    rgba(219, 63, 6, 0.13) 89%,
+    rgba(255, 136, 0, 0) 80%
+  );
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar .logo {
+  padding: 6px;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  margin: 10px 30px;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 1px 20px;
+  margin-right: 10px;
+}
+
+.nav a[href="register_form.php"] {
+  border-bottom: 0.8px solid #fff;
+}
+
+.nav a[href="login_form.php"] {
+  border-bottom: 0.8px solid #fff;
+}
+
+.nav a:hover {
+  color: rgb(255, 180, 40);
+}
+
+/* left info panel */
+
+.info-pane {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  grid-area: info;
+  padding: 15px 35px;
+  margin: 30px 40px;
+  align-items: center;
+  text-align: left;
+  max-height: 80vh;
+  font-size: 2.5em;
+}
+
+.info-pane h3 {
+  color: rgb(167, 0, 0);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.form-flex form {
+  padding: 20px;
+  border-radius: 5px;
+  grid-area: form;
+  grid-column: 3/4;
+  color: white;
+  border-radius: 10px;
+  grid-area: info;
+  padding: 15px 35px;
+  margin: 30px 40px;
+  align-items: center;
+  text-align: justify;
+  max-width: 80%;
+  line-height: 1.2;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 218, 97);
+  text-align: center;
+}
+
+.form-flex form h3 {
+  color: rgb(167, 0, 0);
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form-flex form input,
+.form-flex form select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 8px 0;
+  background: #eee;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.form-flex form select option {
+  background: #fff;
+}
+
+.form-flex form .form-btn {
+  background: #fbd0d9;
+  color: crimson;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-flex form .form-btn:hover {
+  background: crimson;
+  color: #fff;
+}
+
+.form-flex form p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.form-flex form p a {
+  color: crimson;
+}
+
+.form-flex form .error-msg {
+  margin: 10px 0;
+  display: block;
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}

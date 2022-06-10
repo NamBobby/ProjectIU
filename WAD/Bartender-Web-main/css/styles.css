@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-image: url(../img/bg.jpg); */
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 18px;
+    height: 100vh;
+    background: rgb(71, 71, 71);
+    background: url(../img/bg.jpg);
+    background-size: 100vw;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 15px;
+    grid-template-areas: "nav nav nav" "info info form";
+    grid-template-columns: 1fr 0.7fr 1.2fr;
+    grid-template-rows: 50px 1fr;
+}
+
+
+/* navbar */
+
+.navbar {
+    grid-area: nav;
+    background: rgb(6, 66, 166);
+    background: linear-gradient( 180deg, rgb(116, 40, 27) 3%, rgba(219, 63, 6, 0.13) 89%, rgba(255, 136, 0, 0) 80%);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .logo {
+    padding: 6px;
+    color: #fff;
+}
+
+.nav {
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1px 4px;
+    margin-right: 6px;
+}
+
+.nav a[href="register_form.php"] {
+    border-bottom: 0.8px solid #fff;
+}
+
+.nav a[href="admin_page.php"] {
+    border-bottom: 0.8px solid #fff;
+}
+
+.nav a:hover {
+    color: rgb(255, 180, 40);
+}
+
+.input-group {
+    grid-area: form;
+    max-height: 80vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.509);
+    border-radius: 10px;
+    grid-area: info;
+    padding: 15px 35px;
+    margin: 30px 40px;
+    align-items: center;
+    text-align: justify;
+    max-width: 80%;
+    line-height: 1.2;
+}
+
+.input-group table {
+    background: rgb(255, 180, 40);
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.input-group tr {
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.input-group th,
+.input-group td {
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+
+.input-group tr:hover {
+    background: rgba(226, 230, 25, 0.66);
+}
+
+.input-group form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 218, 97);
+    text-align: center;
+    max-height: 80vh;
+}
+
+.input-group form h3 {
+    color: rgb(167, 0, 0);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.input-group form select option {
+    background: #fff;
+}
+
+.input-group form .form-btn {
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.input-group form .form-btn:hover {
+    background: crimson;
+    color: #fff;
+}
+
+.input-group form .edit_btn:hover {
+    background: crimson;
+    color: #fff;
+}
+
+.input-group form .del_btn:hover {
+    background: crimson;
+    color: #fff;
+}
+
+.error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}

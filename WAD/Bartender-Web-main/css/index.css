@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 18px;
+  height: 100vh;
+  background-size: 100vw;
+  overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+.grid-container {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 15px;
+  grid-template-areas: "nav nav" "result ingredient";
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: 50px 1fr;
+  z-index: 0;
+}
+
+/* navbar */
+.navbar {
+  grid-area: nav;
+  background: rgb(6, 66, 166);
+  background: linear-gradient(
+    180deg,
+    rgb(116, 40, 27) 3%,
+    rgba(219, 63, 6, 0.13) 89%,
+    rgba(255, 136, 0, 0) 80%
+  );
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 5;
+}
+
+#btn{
+  text-align: center;
+  cursor: pointer;
+}
+
+.navbar h2 {
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+  width: 8%;
+  padding: 10px 5px 5px;
+  color: white;
+}
+
+.navbar .logo {
+  padding: 6px;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  margin: 10px 30px;
+  margin-right: 20px;
+}
+.nav p {
+  color: white;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin: 1px 20px;
+  margin-right: 10px;
+}
+
+.nav a[href="user_page.php"] {
+  border-bottom: 0.8px solid #fff;
+}
+
+.nav a:hover {
+  color: rgb(255, 180, 40);
+}
+
+/* Ingredients */
+.ingredient-container {
+  display: grid;
+  gap: 5px;
+  grid-area: ingredient;
+  grid-template-areas: "button button button" "main main main" "coffee milk tea" "mix mix mix" "caramel fizzy mint";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30px 40px 1fr 40px 1fr;
+  margin-right: 50px;
+  margin-top: 30px;
+  padding: 15px 10px;
+  justify-items: center;
+  background: rgba(255, 186, 186, 0.39);
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Bell MT";
+  font-size: 22px;
+  box-shadow: rgba(181, 180, 183, 0.3) 0px 10px 10px 0px;
+}
+.visible {
+  opacity: 1;
+  animation: showingredients 2s linear 1 normal no-repeat;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+.hidden {
+  opacity: 0;
+}
+
+@keyframes showingredients {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.ingredient-container #main-ingredient {
+  visibility: inherit;
+  grid-area: main;
+  margin: 8px auto;
+  align-items: center;
+  padding: 8px auto;
+}
+.ingredient-container #mix {
+  visibility: inherit;
+  grid-area: mix;
+  margin: 8px auto;
+  margin-top: 10px;
+  align-items: center;
+  padding: 8px auto;
+}
+.ingredient-container img {
+  visibility: inherit;
+  width: 65%;
+  align-self: center;
+}
+
+#i-panel > input {
+  visibility: inherit;
+  grid-area: button;
+  border: none;
+  background-color: rgb(116, 40, 27);
+  padding: 5px 5px 5px 5px;
+  z-index: 0;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  color: #fff;
+}
+#i-panel > input:hover {
+  border: 1px solid rgba(181, 180, 183, 1);
+}
+
+/* Background */
+#bg {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  display: inline-block;
+  overflow-y: hidden;
+}
+.bg-large {
+  position: absolute;
+  animation: zoomout 3s ease-in 1 normal;
+  animation-fill-mode: both;
+  animation-delay: 99999s;
+
+  left: -24em;
+  top: -118em;
+  width: 550%;
+}
+.bg-small {
+  position: absolute;
+  animation: zoomout 3s ease-in 1 normal;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+
+  left: -24em;
+  top: -118em;
+  width: 550%;
+}
+@keyframes zoomout {
+  0% {
+    left: -24em;
+    top: -118em;
+    width: 550%;
+  }
+  30% {
+    left: -16em;
+    top: -98em;
+    width: 470%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+  }
+}
+
+/* Bottle */
+#bottle {
+  position: inherit;
+  max-height: 50vh;
+  height: 30vh;
+  top: 37vh;
+  left: 18vw;
+  display: none;
+  z-index: 20;
+}
+#bottle-bg {
+  position: absolute;
+  height: 73vh;
+  width: 40vw;
+  top: 95px;
+  left: 8vw;
+  display: none;
+  background-color: rgba(103, 70, 64, 0.425);
+  color: white;
+  align-items: center;
+  border-radius: 10px;
+}
+.bottle-shake {
+  animation: shake 0.8s linear 1 normal;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Result text */
+#result {
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 30px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 50px;
+}
+#drink-description {
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+}
