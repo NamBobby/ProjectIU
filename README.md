@@ -25,6 +25,6 @@ Project SE helps students make a complete software (at least 80%). Through any p
 
 WAD  : Web Application Developer project
 
-Project WAD helps students make a complete website (at least 80%). Through .NET programming language
+Project WAD helps students make a website. Through .NET programming language
 
 Topic: Beverage Website
