@@ -33,7 +33,7 @@ if (isset($_POST['update'])) {
     $user_type = $_POST['user_type'];
     $select = "SELECT * FROM user_form WHERE email = '$email' OR name= '$name'";
     $result = mysqli_query($db, $select);
-    if (mysqli_num_rows($result) > 0) {
+    if (mysqli_num_rows($result) > 1) {
         $_SESSION['message'] = "User already exist!";
         header('location:admin_page.php');
     } else {
