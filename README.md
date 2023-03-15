@@ -28,3 +28,9 @@ WAD  : Web Application Developer project
 Project WAD helps students make a website. Through .NET programming language
 
 Topic: Beverage Website
+
+CN  : Computer Network Project
+
+Project CN helps students make a prethesis report related to the course
+
+Topic: SMART HOME
