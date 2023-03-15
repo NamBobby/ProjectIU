@@ -31,6 +31,6 @@ Topic: Beverage Website
 
 CN  : Computer Network Project
 
-Project CN helps students make a prethesis report related to the course
+Project CN helps students make a prethesis report which topic relates to the course
 
 Topic: SMART HOME
