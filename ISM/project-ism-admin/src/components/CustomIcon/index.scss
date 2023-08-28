@@ -1,0 +1,20 @@
+.custom-icon{
+    display: inline-block;
+    .anticon{
+        font-size: 18px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &-btn{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 0px 5px 2px #fdfdfd;
+        }
+    }
+}

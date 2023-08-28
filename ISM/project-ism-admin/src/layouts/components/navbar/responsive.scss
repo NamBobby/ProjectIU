@@ -1,0 +1,1150 @@
+@import '@assets/css/_variables.scss';
+
+$media: screen;
+$feature_min: min-width;
+$feature_max: max-width;
+$value_one: 767px;
+$value_two: 768px;
+$value_three: 991px;
+$value_four: 992px;
+$value_five: 1199px;
+$value_six: 1200px;
+$value_seven: 1350px;
+$value_eight: 1910px;
+
+/* Max width (767px) */
+@media only #{$media} and ($feature_max : $value_one) {
+
+    .crake-nav {
+        nav {
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar {
+            .navbar-responsive {
+                display: flex;
+                justify-content: space-between;
+                flex: 1;
+                width: 100%;
+                align-items: center;
+
+
+                .right {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .btn-opt {
+                    margin-left: 18px;
+
+                    .opt-icon {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .hamburger-opt-icon {
+                            margin-right: 16px;
+                        }
+
+                        .opt-text {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 140%;
+                            text-transform: uppercase;
+                            color: #000000;
+                        }
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        background-color: var(--primaryColor);
+                        border: 1px solid var(--primaryColor);
+                        border-radius: 6px;
+
+
+                        .opt-icon {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            &.mobile {
+                                svg path {
+                                    stroke: var(--whiteColor);
+                                }
+                            }
+
+
+                            .hamburger-opt-icon {
+                                svg path {
+                                    stroke: var(--whiteColor);
+                                }
+                            }
+
+                            .opt-text {
+
+                                color: var(--whiteColor);
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .navbar-desktop {
+                display: none !important;
+            }
+
+            .navbar-brand {
+                &.mobile {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    img {
+                        margin: auto;
+                        height: 80px;
+                        width: 80px;
+                        position: absolute;
+                        z-index: 99999999;
+                    }
+                }
+
+                &.tablet {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    img {
+                        margin: auto;
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+
+                &.desktop {
+                    display: none;
+                }
+            }
+        }
+
+
+    }
+
+    .top-header {
+        display: none;
+    }
+
+    .sidebar-modal {
+        &.drawer-header {
+            .modal {
+                top: 64px;
+                height: 90%;
+
+
+                &.left {
+                    &.fade {
+                        &.show {
+                            .modal-dialog {
+                                width: 100%;
+                                background-color: rgba(0, 0, 0, 0.25);
+                                height: 100%;
+                                right: 0;
+                                left: auto;
+
+                                .modal-content {
+                                    max-height: 75vh;
+                                    max-width: 75vw;
+                                    overflow-x: hidden;
+                                    overflow-y: auto;
+                                    padding-bottom: 0;
+                                    float: right;
+                                    height: auto;
+
+                                    .modal-body {
+                                        padding: 24px;
+                                        flex: unset;
+                                        position: relative;
+                                        z-index: 2;
+
+                                        .list-menu {
+                                            .parent {
+                                                margin-bottom: 20px;
+
+                                                label,
+                                                .title-menu {
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    font-size: 16px;
+                                                    line-height: 140%;
+                                                    text-transform: uppercase;
+                                                    color: #474747;
+                                                }
+
+                                                &.active {
+                                                    padding-bottom: 5px;
+                                                    border-bottom: 5px solid #F68317;
+                                                }
+
+                                                &.active,
+                                                &:hover,
+                                                &:focus {
+
+                                                    label,
+                                                    .title-menu {
+                                                        font-style: normal;
+                                                        font-weight: bold;
+                                                        font-size: 16px;
+                                                        line-height: 140%;
+                                                        text-transform: uppercase;
+                                                        color: #F68317;
+                                                    }
+                                                }
+
+                                                ul {
+                                                    &.child {
+                                                        margin-left: 24px;
+
+                                                        li {
+
+                                                            margin-bottom: 40px;
+
+                                                            &:last-child {
+                                                                margin-bottom: 0;
+                                                            }
+
+                                                            a {
+                                                                font-style: normal;
+                                                                font-weight: 600;
+                                                                font-size: 18px;
+                                                                line-height: 140%;
+                                                                text-transform: uppercase;
+                                                                color: #474747;
+                                                            }
+
+                                                            &:hover,
+                                                            &:focus {
+                                                                a {
+                                                                    font-style: normal;
+                                                                    font-weight: bold;
+                                                                    font-size: 18px;
+                                                                    line-height: 140%;
+                                                                    text-transform: uppercase;
+                                                                    color: #F68317;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                }
+
+                                                input[type="checkbox"] {
+                                                    position: absolute;
+                                                    left: -9999px;
+
+                                                    ~ {
+                                                        ul {
+                                                            height: 0;
+                                                            transform: scaleY(0);
+                                                        }
+                                                    }
+
+                                                    &:checked {
+                                                        ~ {
+                                                            ul {
+                                                                margin-top: 40px;
+                                                                height: 100%;
+                                                                transform-origin: top;
+                                                                transition: transform .2s ease-out;
+                                                                transform: scaleY(1);
+                                                            }
+                                                        }
+
+                                                        + {
+                                                            label {
+                                                                font-style: normal;
+                                                                font-weight: bold;
+                                                                font-size: 18px;
+                                                                line-height: 140%;
+                                                                text-transform: uppercase;
+                                                                color: #F68317;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .modal-footer {
+                                        background: #F8F8FC;
+                                        padding: 0.75rem;
+                                        width: 100%;
+                                        position: relative;
+                                        z-index: 2;
+
+                                        align-items: center;
+                                        justify-content: center;
+
+
+
+                                        .btn-footer {
+                                            margin: 24px 0;
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            flex-direction: column;
+
+                                            .nptb {
+                                                margin-top: 6px;
+                                            }
+
+                                            ul {
+                                                list-style-type: none;
+                                                padding: 0;
+                                                display: flex;
+                                                align-items: center;
+
+                                                li {
+                                                    margin-left: 12px;
+
+                                                    &:first-child {
+                                                        margin-left: 0;
+                                                    }
+
+                                                    .btn-top {
+                                                        font-size: 12px;
+                                                        line-height: 14px;
+                                                        padding: 3px;
+
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .search-footer {
+                                            position: relative;
+                                            margin: 0 24px 24px 24px;
+                                            width: 100%;
+
+                                            .search-footer__search {
+                                                margin-bottom: 12px;
+
+                                                .search-input {
+                                                    display: flex;
+                                                    margin: auto;
+                                                    align-items: center;
+                                                    position: relative;
+                                                    border: 1px solid #fa8717;
+                                                    box-sizing: border-box;
+                                                    border-radius: 12px;
+                                                    flex: 1;
+                                                    height: 32px;
+                                                    padding-left: 18px;
+                                                    background-color: var(--whiteColor);
+
+                                                    .search-icon {
+                                                        margin-right: 10px;
+                                                        background: var(--primaryColor);
+                                                        height: 80%;
+                                                        aspect-ratio: 1;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        border-radius: 10px;
+
+                                                        svg {
+                                                            height: 16px;
+                                                            width: 16px;
+                                                        }
+                                                    }
+
+                                                    .form-input {
+                                                        z-index: 999;
+                                                        width: 100%;
+                                                    }
+
+                                                    input {
+                                                        background-color: transparent;
+
+                                                        &:focus,
+                                                        &:hover,
+                                                        &:active,
+                                                        &:not(:focus) {
+                                                            outline: none;
+                                                            border: none;
+
+                                                            .has-border {
+                                                                border: 2px solid blue;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+
+                                            .search-footer__social {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                width: 100%;
+
+                                                ul {
+                                                    list-style-type: none;
+                                                    padding: 0;
+                                                }
+
+                                                .list-btn-social {
+                                                    display: flex;
+                                                    justify-content: flex-start;
+                                                    align-items: center;
+                                                    margin: 0;
+                                                    padding: 0;
+
+                                                    .social-list {
+                                                        .social-btn {
+                                                            margin-right: 6px;
+
+                                                            &:last-child {
+                                                                margin-right: 0;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
+                                            }
+
+                                        }
+
+                                        .btn-top-primary {
+                                            color: var(--primaryColor1);
+                                            border: 1px solid var(--primaryColor1);
+
+                                            &:hover,
+                                            &:focus,
+                                            &:active {
+                                                border: none;
+                                                color: var(--whiteColor) !important;
+                                                background: var(--primaryColor1);
+                                                transform: translateY(-5px);
+                                            }
+
+                                            &.focus,
+                                            &:focus {
+                                                box-shadow: unset;
+                                            }
+
+                                            &:not(:disabled):not(.disabled).active:focus,
+                                            &:not(:disabled):not(.disabled):active:focus,
+                                            .show>.btn-blue.dropdown-toggle:focus {
+                                                box-shadow: unset;
+                                            }
+
+                                            &:not(:disabled):not(.disabled).active,
+                                            &:not(:disabled):not(.disabled):active,
+                                            .show>.btn-blue.dropdown-toggle {
+                                                color: var(--whiteColor);
+                                                background: var(--primaryColor);
+                                                transform: translateY(-5px);
+                                            }
+
+                                            &.disabled,
+                                            &:disabled {
+                                                color: var(--whiteColor);
+                                                background-color: var(--paragraphColor);
+                                                border-color: var(--paragraphColor);
+                                                opacity: 1;
+
+                                                &:hover,
+                                                &:focus {
+                                                    background: var(--darkColor);
+                                                }
+                                            }
+                                        }
+
+
+                                        .btn-top {
+                                            font: {
+                                                weight: 700;
+                                                size: 15px;
+                                            }
+
+                                            cursor: pointer;
+                                            padding: 5px 14px;
+                                            text-transform: uppercase;
+                                            position: relative;
+                                            z-index: 1;
+                                            transition: .9s;
+                                            border-radius: 6px;
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            font-size: 14px;
+                                            line-height: 19px;
+                                            color: var(--primaryColor1);
+                                            text-align: center;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            max-width: auto;
+
+
+                                            &::after,
+                                            &::before {
+                                                content: '';
+                                                position: absolute;
+                                                top: 0;
+                                                height: 100%;
+                                                width: 0;
+                                                transition: .4s;
+                                                background: var(--primaryColor1);
+                                                z-index: -1;
+                                                border-radius: 6px;
+                                            }
+
+
+                                            &::after {
+                                                left: 0;
+                                            }
+
+                                            &::before {
+                                                right: 0;
+                                            }
+
+                                            &:hover {
+
+                                                &::after,
+                                                &::before {
+                                                    width: 50%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .toggleWrapper {
+            .knobs {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+            }
+
+            .layer {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: var(--whiteColor);
+                border: 1px solid var(--primaryColor);
+                border-radius: 6px;
+                transition: 0.3s ease all;
+                z-index: 1;
+            }
+        }
+    }
+
+    .nav-bottom {
+        display: block !important;
+
+        .btn-nav-bottom {
+            font-size: 9px !important;
+        }
+
+        .btn-nav-bottom img {
+            height: 24px !important;
+            margin-right: 4px !important;
+        }
+    }
+}
+
+/* Min width (768px) to Max width (991px) */
+
+@media only #{$media} and ($feature_min : $value_two) and ($feature_max : $value_three) {
+
+    .star3__drawer,
+    .star2__drawer {
+        z-index: 2;
+    }
+
+
+    .nav-bottom {
+        .wrap-items {
+            width: 50%;
+            min-height: 100%;
+
+            .btn-nav-bottom {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+        }
+    }
+
+    .crake-nav {
+        nav {
+            padding: 6px 0;
+            display: flex;
+            align-items: center;
+
+            .navbar-brand img {
+                margin: -16px 0;
+            }
+        }
+
+        .navbar {
+            .navbar-responsive {
+                display: flex;
+                justify-content: space-between;
+                flex: 1;
+                width: 100%;
+                align-items: center;
+
+                .btn-opt {
+                    .opt-icon {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .hamburger-opt-icon {
+                            margin-right: 16px;
+                        }
+
+                        .opt-text {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 140%;
+                            text-transform: uppercase;
+                            color: #000000;
+                        }
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        background-color: var(--primaryColor);
+                        border: 1px solid var(--primaryColor);
+                        border-radius: 6px;
+
+
+                        .opt-icon {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+
+                            .hamburger-opt-icon {
+                                svg path {
+                                    stroke: var(--whiteColor);
+                                }
+                            }
+
+                            .opt-text {
+
+                                color: var(--whiteColor);
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .navbar-desktop {
+                display: none !important;
+            }
+
+            .navbar-brand {
+                &.mobile {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    img {
+                        margin: auto;
+                        height: 78px;
+                        width: 78px;
+                    }
+                }
+
+                &.desktop {
+                    display: none;
+                }
+            }
+        }
+
+
+    }
+
+
+
+    .top-header {
+        display: none;
+    }
+
+    .sidebar-modal {
+        &.drawer-header {
+            .modal {
+                top: 90px;
+                background-color: rgba(0, 0, 0, 0.25);
+
+                &.left {
+                    &.fade {
+                        &.show {
+                            .modal-dialog {
+                                width: 100%;
+                                right: 0;
+                                left: auto;
+
+                                .modal-content {
+                                    max-height: 75vh;
+                                    max-width: 75vw;
+                                    overflow-x: hidden;
+                                    overflow-y: auto;
+                                    padding-bottom: 0;
+                                    background-color: transparent;
+                                    height: auto;
+
+                                    .modal-body {
+                                        background-color: white;
+                                        padding: 45px 50px 0 30px;
+                                        flex: unset;
+                                        overflow-y: auto;
+                                        position: relative;
+                                        z-index: 2;
+
+                                        .list-menu {
+                                            .parent {
+                                                margin-bottom: 40px;
+
+                                                label,
+                                                .title-menu {
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    font-size: 18px;
+                                                    line-height: 140%;
+                                                    text-transform: uppercase;
+                                                    color: #474747;
+                                                }
+
+                                                &.active {
+                                                    padding-bottom: 16px;
+                                                    border-bottom: 9px solid #F68317;
+                                                }
+
+                                                &.active,
+                                                &:hover,
+                                                &:focus {
+
+                                                    label,
+                                                    .title-menu {
+                                                        font-style: normal;
+                                                        font-weight: bold;
+                                                        font-size: 18px;
+                                                        line-height: 140%;
+                                                        text-transform: uppercase;
+                                                        color: #F68317;
+                                                    }
+                                                }
+
+                                                ul {
+                                                    &.child {
+                                                        margin-left: 24px;
+
+                                                        li {
+
+                                                            margin-bottom: 40px;
+
+                                                            &:last-child {
+                                                                margin-bottom: 0;
+                                                            }
+
+                                                            a {
+                                                                font-style: normal;
+                                                                font-weight: 600;
+                                                                font-size: 18px;
+                                                                line-height: 140%;
+                                                                text-transform: uppercase;
+                                                                color: #474747;
+                                                            }
+
+                                                            &:hover,
+                                                            &:focus {
+                                                                a {
+                                                                    font-style: normal;
+                                                                    font-weight: bold;
+                                                                    font-size: 18px;
+                                                                    line-height: 140%;
+                                                                    text-transform: uppercase;
+                                                                    color: #F68317;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                }
+
+                                                input[type="checkbox"] {
+                                                    position: absolute;
+                                                    left: -9999px;
+
+                                                    ~ {
+                                                        ul {
+                                                            height: 0;
+                                                            transform: scaleY(0);
+                                                        }
+                                                    }
+
+                                                    &:checked {
+                                                        ~ {
+                                                            ul {
+                                                                margin-top: 40px;
+                                                                height: 100%;
+                                                                transform-origin: top;
+                                                                transition: transform .2s ease-out;
+                                                                transform: scaleY(1);
+                                                            }
+                                                        }
+
+                                                        + {
+                                                            label {
+                                                                font-style: normal;
+                                                                font-weight: bold;
+                                                                font-size: 18px;
+                                                                line-height: 140%;
+                                                                text-transform: uppercase;
+                                                                color: #F68317;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .modal-footer {
+                                        background: #F8F8FC;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        width: 100%;
+                                        position: relative;
+                                        z-index: 2;
+
+                                        .btn-footer {
+                                            margin: 36px 32px 0 32px;
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: space-between;
+
+
+                                            ul {
+                                                list-style-type: none;
+                                                padding: 0;
+
+                                                li {
+                                                    margin-bottom: 16px;
+                                                }
+                                            }
+                                        }
+
+                                        .search-footer {
+                                            position: relative;
+                                            margin: 30px 32px;
+                                            width: 100%;
+
+                                            .search-footer__search {
+                                                margin-bottom: 30px;
+
+                                                .search-input {
+                                                    display: flex;
+                                                    margin: auto;
+                                                    align-items: center;
+                                                    position: relative;
+                                                    border: 1px solid #fa8717;
+                                                    box-sizing: border-box;
+                                                    border-radius: 12px;
+                                                    flex: 1;
+                                                    height: 56px;
+                                                    padding-left: 18px;
+                                                    background-color: var(--whiteColor);
+
+                                                    .search-icon {
+                                                        margin-right: 10px;
+                                                        background: var(--primaryColor);
+                                                        height: 80%;
+                                                        aspect-ratio: 1;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        border-radius: 10px;
+                                                    }
+
+                                                    .form-input {
+                                                        z-index: 999;
+                                                        width: 100%;
+                                                    }
+
+                                                    input {
+                                                        background-color: transparent;
+
+                                                        &:focus,
+                                                        &:hover,
+                                                        &:active,
+                                                        &:not(:focus) {
+                                                            outline: none;
+                                                            border: none;
+
+                                                            .has-border {
+                                                                border: 2px solid blue;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+
+                                            .search-footer__social {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                width: 100%;
+
+                                                ul {
+                                                    list-style-type: none;
+                                                    padding: 0;
+                                                }
+
+                                                .list-btn-social {
+                                                    display: flex;
+                                                    justify-content: flex-start;
+                                                    align-items: center;
+                                                    margin: 0;
+                                                    padding: 0;
+
+                                                    .social-list {
+                                                        .social-btn {
+                                                            margin-right: 6px;
+
+                                                            &:last-child {
+                                                                margin-right: 0;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
+                                            }
+
+                                        }
+
+
+
+                                        .btn-top-primary {
+                                            color: var(--primaryColor1);
+                                            border: 1px solid var(--primaryColor1);
+
+                                            &:hover,
+                                            &:focus,
+                                            &:active {
+                                                border: none;
+                                                color: var(--whiteColor) !important;
+                                                background: var(--primaryColor1);
+                                                transform: translateY(-5px);
+                                            }
+
+                                            &.focus,
+                                            &:focus {
+                                                box-shadow: unset;
+                                            }
+
+                                            &:not(:disabled):not(.disabled).active:focus,
+                                            &:not(:disabled):not(.disabled):active:focus,
+                                            .show>.btn-blue.dropdown-toggle:focus {
+                                                box-shadow: unset;
+                                            }
+
+                                            &:not(:disabled):not(.disabled).active,
+                                            &:not(:disabled):not(.disabled):active,
+                                            .show>.btn-blue.dropdown-toggle {
+                                                color: var(--whiteColor);
+                                                background: var(--primaryColor);
+                                                transform: translateY(-5px);
+                                            }
+
+                                            &.disabled,
+                                            &:disabled {
+                                                color: var(--whiteColor);
+                                                background-color: var(--paragraphColor);
+                                                border-color: var(--paragraphColor);
+                                                opacity: 1;
+
+                                                &:hover,
+                                                &:focus {
+                                                    background: var(--darkColor);
+                                                }
+                                            }
+                                        }
+
+
+                                        .btn-top {
+                                            font: {
+                                                weight: 700;
+                                                size: 15px;
+                                            }
+
+                                            cursor: pointer;
+                                            padding: 5px 14px;
+                                            text-transform: uppercase;
+                                            position: relative;
+                                            z-index: 1;
+                                            transition: .9s;
+                                            border-radius: 6px;
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            font-size: 14px;
+                                            line-height: 19px;
+                                            color: var(--primaryColor1);
+                                            text-align: center;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+
+
+                                            &::after,
+                                            &::before {
+                                                content: '';
+                                                position: absolute;
+                                                top: 0;
+                                                height: 100%;
+                                                width: 0;
+                                                transition: .4s;
+                                                background: var(--primaryColor1);
+                                                z-index: -1;
+                                                border-radius: 6px;
+                                            }
+
+
+                                            &::after {
+                                                left: 0;
+                                            }
+
+                                            &::before {
+                                                right: 0;
+                                            }
+
+                                            &:hover {
+
+                                                &::after,
+                                                &::before {
+                                                    width: 50%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .nav-bottom {
+        display: block !important;
+
+        .btn-nav-bottom {
+            font-size: 12px !important;
+        }
+
+        .btn-nav-bottom img {
+            height: 24px !important;
+            margin-right: 4px !important;
+        }
+    }
+}
+
+/* Min width (992px) to Max width (1199px) */
+@media only #{$media} and ($feature_min : $value_four) and ($feature_max : $value_five) {
+    .header {
+        .navbar .btn-top {
+            cursor: pointer;
+            padding: 5px 12px;
+            border-radius: 6px;
+            text-align: center;
+        }
+    }
+}
+
+/* Min width (1200px) to Max width (1350px) */
+@media only #{$media} and ($feature_min : $value_six) and ($feature_max : $value_seven) {
+    .header {
+        .navbar .btn-top {
+            cursor: pointer;
+            padding: 5px 12px;
+            border-radius: 6px;
+            text-align: center;
+        }
+    }
+
+    .crake-nav .navbar-top .navbar-nav li a {
+        margin: 0 3px;
+    }
+}
+
+/* Min width (1910px) */
+@media only #{$media} and ($feature_min : $value_eight) {
+    .header {
+        .navbar-brand {
+            &.mobile {
+                display: none;
+            }
+
+            &.desktop {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 1824px) {
+    .header {
+        .navbar-brand {
+            &.mobile {
+                display: none;
+            }
+
+            &.desktop {
+                display: block;
+            }
+        }
+    }
+}

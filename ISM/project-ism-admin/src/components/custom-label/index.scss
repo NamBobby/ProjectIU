@@ -1,0 +1,48 @@
+@import "../../../assets/scss/variables/variables";
+
+//name base on figma
+label {
+	margin-bottom: 0;
+}
+.label__hweb2 {
+	font-weight: 700;
+	font-size: 25px;
+	font-family: "NunitoBold";
+	line-height: 44px;
+	color: $label-color;
+	text-transform: uppercase;
+}
+.label__subtitles {
+	font-family: "NunitoBold";
+	font-size: 17px;
+	line-height: 24px;
+	color: $label-color;
+}
+.label__body-text {
+	font-size: 16px;
+	line-height: 24px;
+	color: $gray-light;
+}
+.label__title {
+	font-size: 20px;
+	font-weight: 700;
+	color: $gray-darker;
+}
+.label__title-blue {
+	align-self: center;
+	font-size: 24px;
+	color: #739cff;
+	font-family: "NunitoBold";
+}
+.label__button-2 {
+	color: $gray-darker;
+	font-weight: 600;
+	font-size: 1rem;
+}
+.label__button-1 {
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 39px;
+	letter-spacing: 0.01em;
+}
