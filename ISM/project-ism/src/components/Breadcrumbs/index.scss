@@ -1,0 +1,99 @@
+@import "@assets/css/_variables.scss";
+$media: screen;
+$feature_min: min-width;
+$feature_max: max-width;
+$value_one: 767px;
+$value_two: 768px;
+$value_three: 991px;
+$value_four: 992px;
+$value_five: 1199px;
+$value_six: 1200px;
+$value_seven: 1350px;
+$value_eight: 1910px;
+
+.breadcrumb-wrapper {
+  box-sizing: border-box;
+  padding: 3rem 0;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+
+  .page__section {
+    color: var(--darkColor);
+    border-radius: 2px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    &:nth-of-type(n + 2) {
+      margin-top: 2.5rem;
+    }
+
+    .breadcrumb {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      margin-bottom: 0;
+
+      .breadcrumb__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 0;
+
+        .breadcrumb__group {
+          display: inline-flex;
+          align-items: center;
+
+          a {
+            &.breadcrumb__point {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 140%;
+              color: #7c7c80;
+            }
+          }
+
+          .breadcrumb__divider {
+            margin-left: 0.75rem;
+            font-size: 20px;
+            color: #c4c4c4;
+          }
+
+          span {
+            &.breadcrumb__point {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 20px;
+              line-height: 140%;
+              color: var(--primaryColor);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only #{$media} and ($feature_max : $value_one) {
+  .breadcrumb-wrapper {
+    padding: 12px;
+    .page__section {
+      .breadcrumb-back {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+@media only #{$media} and ($feature_min : $value_two) and ($feature_max : $value_three) {
+  .breadcrumb-wrapper {
+    padding: 1rem;
+  }
+}
+@media only #{$media} and ($feature_min : $value_four) and ($feature_max : $value_five) {
+  .breadcrumb-wrapper {
+    padding: 2rem;
+  }
+}
