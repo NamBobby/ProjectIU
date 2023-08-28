@@ -34,3 +34,9 @@ CN  : Computer Network Project
 Project CN helps students make a prethesis report on which topic relates to the course
 
 Topic: SMART HOME
+
+ISM : Information System Management
+
+Project ISM helps students make a website and show abilities in information management
+
+Topic: E-commercial website
