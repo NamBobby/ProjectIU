@@ -1,0 +1,225 @@
+{
+  "FormSignIn": {
+    "title": "Đăng nhập",
+    "forgot_user_name": "Quên tên đăng nhập",
+    "forgot_password": "Quên mật khẩu",
+    "not_have_acc": "Bạn chưa có tài khoản? ",
+    "btn_sign_in": "Đăng nhập",
+    "btn_sign_up": "Đăng ký",
+    "field": {
+      "user_name": "Tên đăng nhập",
+      "password": "Mật khẩu"
+    },
+    "errors": {
+      "user_name_or_password.wrong": "Tên đăng nhập hoặc mật khẩu không đúng."
+    }
+  },
+  "AccountList": {
+    "title": "Đăng ký thành viên",
+    "card_title": "Danh sách tài khoản",
+    "your_account_info": "Thông tin tài khoản của bạn",
+    "field": {
+      "user_name": "Tên đăng nhập",
+      "password": "Mật khẩu",
+      "register_date": "Ngày đăng ký",
+      "last_login_date": "Ngày đăng nhập cuối",
+      "course_activated": "Đã kích hoạt khóa học"
+    }
+  },
+  "FormSignUp": {
+    "title": "Đăng ký thành viên",
+    "sub_title": "Thông tin đăng nhập",
+    "student_information": "Thông tin học sinh",
+    "enter_credentials": "Thông tin xác thực",
+    "forgot_user_name": "Quên tên đăng nhập",
+    "forgot_password": "Quên mật khẩu",
+    "not_have_acc": "Bạn chưa có tài khoản? ",
+    "btn_confirm": "Xác nhận",
+    "btn_sign_in": "Đăng nhập",
+    "btn_sign_up": "Đăng ký",
+    "children_info": "Thông tin học viên",
+    "verify_info": "Thông tin xác thực",
+    "send_otp": "Gửi Mã Xác Thực",
+    "sign_up_title": "Đăng ký",
+    "signup_trial_account_success": "Tài khoản đăng ký trải nghiệm thành công",
+    "signup_success": "Tài khoản của bạn đã đăng ký thành công",
+    "send_otp_success": "Gửi mã OTP thành công",
+    "too_many_requests": "Số điện thoại đã vượt quá giới hạn nhận OTP, vui lòng thử lại sau! ",
+
+    "field": {
+      "user_name": "Email",
+      "password": "Mật khẩu",
+      "otp": "Mã xác thực",
+      "confirm_password": "Nhập lại mật khẩu",
+      "parent_fullname": "Họ và tên",
+      "parent_name": "Họ và tên phụ huynh",
+      "student_name": "Họ và tên con học 5' Thuộc Bài",
+      "school_name": "Trường con đang học",
+      "class_name": "Lớp",
+      "children_name": "Họ và tên con học 5' Thuộc Bài",
+      "name_placeholder": "Nhập tên...",
+      "user_name_placeholder": "Nhập tên đăng nhập...",
+      "password_placeholder": "Nhập mật khẩu...",
+      "confirm_password_placeholder": "Nhập nhập lại mật khẩu...",
+      "school_placeholder": "Nhập trường...",
+      "class_placeholder": "Nhập lớp...",
+      "confirm_password_must_match": "Mật khẩu nhập lại không khớp",
+      "codeInvite": "Mã giới thiệu"
+    },
+    "errors": {
+      "user_name_or_password.wrong": "Tên đăng nhập hoặc mật khẩu không đúng.",
+      "confirm_password_not_match": "Mật khẩu nhập lại không khớp",
+      "send_otp_error": "Gửi mã OTP không thành công",
+      "otp_not_match": "Mã OTP không hợp lệ!"
+    }
+  },
+  "FormForgotPassword": {
+    "title": "Quên mật khẩu",
+    "title_description": "Vui lòng cung cấp Tên Đăng Nhập và Số Điện Thoại \nhoặc Email để lấy lại mật khẩu",
+    "title_description_email": "Vui lòng cung cấp Tên Đăng Nhập và Email \nđể lấy lại tài khoản đăng nhập",
+    "title_description_phone": "Vui lòng cung cấp Tên Đăng Nhập và Số Điện Thoại \nđể lấy lại tài khoản đăng nhập",
+    "btn_forgot_password": "Lấy lại mật khẩu",
+    "notice": "Một số điện thoại chỉ được nhập {{ value }} lần 1 ngày",
+    "notice_phone": "Một số điện thoại chỉ được nhập {{ value }} lần 1 ngày",
+    "notice_email": "Một email chỉ được nhập {{ value }} lần 1 ngày",
+    "send_otp_success": "Gửi mã OTP thành công",
+    "otp_not_match_v1": "Xác thực OTP không OTP thành công! Xin hãy gửi lại mã mới.",
+    "field": {
+      "user_name": "Tên đăng nhập",
+      "number_phone_or_email": "Số điện thoại hoặc Email",
+      "number_phone": "Số điện thoại",
+      "email": "Email"
+    },
+    "errors": {
+      "info.wrong": "Thông tin không chính xác vui lòng kiểm tra.",
+      "send_otp_error": "Gửi mã OTP không thành công",
+      "otp_not_match": "Mã OTP không hợp lệ!"
+    }
+  },
+  "FormForgotUsername": {
+    "title": "Quên tên đăng nhập",
+    "title_description": "Vui lòng cung cấp Số Điện Thoại \nhoặc Email để lấy lại tài khoản đăng nhập",
+    "title_description_email": "Vui lòng cung cấp Email \nđể lấy lại tài khoản đăng nhập",
+    "title_description_phone": "Vui lòng cung cấp Số Điện Thoại \nđể lấy lại tài khoản đăng nhập",
+    "btn_forgot_user_name": "Lấy lại tên đăng nhập",
+    "notice": "Một số điện thoại chỉ được nhập {{ value }} lần 1 ngày",
+    "notice_phone": "Một số điện thoại chỉ được nhập {{ value }} lần 1 ngày",
+    "notice_email": "Một email chỉ được nhập {{ value }} lần 1 ngày",
+    "send_otp_success": "Gửi mã OTP thành công",
+    "otp_not_match_v1": "Xác thực OTP không OTP thành công! Xin hãy gửi lại mã mới.",
+    "field": {
+      "number_phone_or_email": "Số điện thoại hoặc Email",
+      "number_phone": "Số điện thoại",
+      "email": "Email"
+    },
+    "errors": {
+      "info.wrong": "Thông tin không chính xác vui lòng kiểm tra.",
+      "send_otp_error": "Gửi mã OTP không thành công",
+      "otp_not_match": "Mã OTP không hợp lệ!"
+    }
+  },
+  "FormVerifyAccount": {
+    "title": "Xác thực tài khoản",
+    "title_description_phone": "Anh/ chị vui lòng nhập mã OTP đã được gửi về \nsố điện  thoại {_Phone_} để xác thực",
+    "title_description_email": "Anh/ chị vui lòng nhập mã OTP đã được gửi về \nđịa chỉ email {_Email_} để xác thực",
+    "btn_verify": "Xác nhận",
+    "field": {
+      "otp": "OTP"
+    },
+    "info": {
+      "verify.success": "Xác thực thành công."
+    },
+    "errors": {
+      "otp.wrong": "Mã OTP không đúng."
+    }
+  },
+  "YourAccountInformation": {
+    "title": "Thông tin tài khoản của bạn",
+    "all": "Tất cả",
+    "new": "Mới nhất",
+    "10_days_ago": "10 Ngày trước",
+    "field": {
+      "full_name": "Họ và Tên",
+      "user_name": "Tên đăng nhập",
+      "password": "Mật khẩu",
+      "registration_date": "Ngày đăng ký",
+      "last_login_date": "Ngày đăng nhập cuối",
+      "course_activated": "Đã kích hoạt khóa học"
+    }
+  },
+  "ActiveAccount": {
+    "title": "Kích hoạt tài khoản",
+    "active_code_required": "Vui lòng nhập Mã kích hoạt",
+    "do_u_have_active_code": "Bạn đã có Mã Kích Hoạt của Hita Camp ?",
+    "type_active_code": "Nhập Mã kích hoạt",
+    "accept": "Đồng ý",
+    "go_into_class": "Vào lớp học",
+    "i_dont_have_active_code": "Tôi chưa có Mã Kích Hoạt",
+    "hot_line": "Hotline Hỗ trợ",
+    "active_tutorial": "Hướng dẫn kích hoạt",
+    "active_success": "Kích hoạt thành công",
+    "active_trial_success": "Đăng ký trải nghiệm thành công",
+    "active_trial_title": "Đăng ký trải nghiệm",
+    "active_trial": "Đăng ký trải nghiệm sản phẩm",
+    "active_pay_success": "Tài khoản đăng ký thành công gói học 5' Thuộc Bài",
+    "start_using": "Bắt đầu sử dụng",
+    "start_trial": "Bắt đầu trải nghiệm",
+    "trial_free": "Trải nghiệm sản phẩm miễn phí",
+    "active_now": "Kích hoạt ngay",
+    "send_otp_error": "Gửi mã OTP không thành công",
+    "send_otp_success": "Gửi mã OTP thành công",
+    "otp_not_match": "Mã OTP không hợp lệ!",
+    "too_many_requests": "Số điện thoại đã vượt quá giới hạn nhận OTP, vui lòng thử lại sau! "
+  },
+  "Auth": {
+    "phone_not_correct": "Số điện thoại không đúng",
+    "phone": "Số điện thoại",
+    "get_otp": "Nhận mã OTP",
+    "otp": "Mã OTP",
+    "register": "Đăng ký",
+    "login": "Đăng nhập",
+    "get_password": "Lấy lại mật khẩu",
+    "send_otp": "Gửi OTP",
+    "not_recieve_otp": "Bạn chưa nhận được OTP?",
+    "resend": "Gửi lại",
+    "check_email": "Kiểm tra hộp thư...",
+    "not_recieve_email": "Bạn chưa nhận được email?",
+    "send_link": "Gửi đường link",
+    "go_back": "Quay lại",
+    "change_pass": "Đặt lại mật khẩu",
+    "save_new_pass": "Lưu mật khẩu mới",
+    "verify": "Xác nhận email",
+    "verify_email_success": "Xác nhận email thành công",
+    "change_pass_success": "Đổi mật khẩu thành công",
+    "have_error": "Đã xảy ra lỗi !",
+    "please_enter_password": "Vui lòng nhập mật khẩu mới để có thể đăng nhập vào hệ thống",
+    "have_seen_otp": "Chúng tôi đã gửi một OTP đến số điện thoại ",
+    "have_seen_email_otp": "Chúng tôi đã gửi một OTP đến Email ",
+    "please_enter_otp": "Vui lòng nhập OTP để lấy lại mật khẩu",
+    "please_enter_otp_forgot": "Vui lòng nhập OTP để lấy lại {{value}}",
+    "please_enter_otp_to_login": "Vui lòng nhập OTP để đăng nhập",
+    "please_enter_otp_to_update": "Vui lòng nhập OTP để thay đổi thông tin",
+    "please_enter_otp_to_update_password": "Vui lòng nhập OTP để thay đổi mật khẩu",
+    "desc_forgot_pass": "Chúng tôi sẽ gửi một mã OTP đến điện thoại của bạn để giúp bạn lấy lại mật khẩu",
+    "pass_retrieval": "Lấy lại mật khẩu",
+    "incorrect_otp": "OTP không đúng, vui lòng nhập lại.",
+    "send_to_number_phone": "Gửi tới số điện thoại ",
+    "confirm": "Xác nhận",
+    "otp_title": "Xác nhận OTP để cập nhật thông tin",
+    "info_parent_otp": "Xác nhận OTP để cập nhật thông tin",
+    "change_parent_info": "Thay đổi thông tin phụ huynh",
+    "update_info": "Cập nhật",
+    "change_pass_info": "Đặt lại mật khẩu",
+    "please_ennter_otp": "Vui lòng nhập mã OTP",
+    
+    "password":"Mật khẩu",
+    "username":"Tên đăng nhập",
+    "get_username": "Lấy lại tên đăng nhập",
+    "usename_retrieval": "Lấy lại tên đăng nhập",
+    "otp_sent": "Mã OTP đã được gửi tới: {{phone}}",
+
+    "confirm_otp_title": "Xác thực OTP",
+    "send_otp_confirm" :  "Gửi Mã Xác Thực",
+    "code_confirm": "Mã xác thực"
+  }
+}

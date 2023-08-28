@@ -1,0 +1,39 @@
+:root {
+
+  @for $i from 1 through 1000 {
+    --size-w-#{$i}: #{$i * 1px};
+  }
+
+  --primaryColor: #E03E0E;
+  --primaryColor1: #EA5023;
+  --primaryColor2: #FA8717;
+  --primaryColor3: #FEE6CF;
+  --primaryColor4: #F68317;
+  --bannerColor: #EA5023;
+  --fontFamily: 'Nunito', sans-serif;
+  --templateColor: #E03E0E;
+  --templateColor2: #FF8A73;
+  --whiteColor: #ffffff;
+  --lightColor: #F8F8FC;
+  --darkColor: #7C7C80;
+  --blackColor: #000000;
+  --paragraphColor: #818992;
+  --transition: .5s;
+  --darkColor1: #474747;
+  --blue: #4A50FF;
+  --blueActive: #7D81F4;
+  --pink: #D74A96;
+  --pinkHover: #F076B8;
+  --lightBlue: #1999D6;
+  --lightBlueHover: #1763FB;
+  --mint: #24B6B1;
+  --mintHover: #2C9491;
+  --green: #47821C;
+  --greenHover: #5BB01C;
+  --purpule: #7B70FF;
+  --purpleHover: #5145E2;
+  --yellow: #FFC736;
+  --yellowHover: #FBB911;
+  --breadcrumbtextcolor: #D1C4E9;
+  --breadcrumbtextcoloractive: #fff;
+}
