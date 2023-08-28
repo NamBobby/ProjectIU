@@ -1,0 +1,2 @@
+(this["webpackJsonpwebsite-hitacamp"]=this["webpackJsonpwebsite-hitacamp"]||[]).push([[104],{134:function(e,t,s){"use strict";s.r(t),t.default={GET_LIST_PRODUCTS:"/vouchers/listClient",DELETE_PRODUCT:"/vouchers/delete",CREATE_PRODUCT:"/vouchers/create",UPDATE_PRODUCT:"/vouchers/update",DETAIL_PRODUCT:"/vouchers/detail",UPLOAD_PRODUCT:"/upload/upload-cloudinary"}}}]);
+//# sourceMappingURL=Voucher-configs-api.16e31abf.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpwebsite-hitacamp"]=this["webpackJsonpwebsite-hitacamp"]||[]).push([[92],{133:function(e,r,t){"use strict";t.r(r),r.default={GET_LIST_ORDER:"/order/get-list-order",GET_DETAIL_ORDER:"/order/get-detail-order",DELETE_DETAIL_ORDER:"/order/delete-detail-order",UPDATE_DETAIL_ORDER:"/order/update-detail-order"}}}]);
+//# sourceMappingURL=Order-configs-api.0410aed9.chunk.js.map
