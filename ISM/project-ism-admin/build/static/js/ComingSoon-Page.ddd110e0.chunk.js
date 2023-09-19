@@ -1,0 +1,2 @@
+(this["webpackJsonpwebsite-hitacamp"]=this["webpackJsonpwebsite-hitacamp"]||[]).push([[10,120],{288:function(t,c,e){},78:function(t,c,e){"use strict";e.r(c),e.d(c,"Contact",(function(){return a}));e(288);var n=e(1),i=e(162),s=e(8),a=function(){return Object(n.useEffect)((function(){window.scrollTo(0,0)}),[]),Object(s.jsx)("div",{className:"coming__page",children:Object(s.jsx)(i.default,{})})};c.default=a}}]);
+//# sourceMappingURL=ComingSoon-Page.ddd110e0.chunk.js.map

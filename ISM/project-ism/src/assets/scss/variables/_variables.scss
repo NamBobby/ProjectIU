@@ -1,0 +1,58 @@
+//  ================================================================================================
+//  ? TIP:  It is recommended to use this file for overriding bootstrap variables.
+//  ================================================================================================
+
+$font-size-base: 0.875rem; //14px
+$font-size-sm: 0.75rem; //12px
+$font-size-md: 1rem; //
+
+$border-radius: 0.375rem; //10px
+$border-rounded: 1.25rem; //20px
+$border-color: #d8d6de;
+$border-color-gray: #eff0f6;
+
+$black: #000000;
+$primary: #1999d6;
+$primary-light: #6dc6eb;
+$danger: #ea5023 !default;
+$sub: $danger;
+$info: #6dc6eb;
+$white: #ffffff;
+$gray: #f8f8fc;
+$gray-light: #7c7c80;
+$gray-dark: #586267;
+$gray-darker: #29292e;
+$warning: #fa8717;
+
+$sidebar-background-color: $danger;
+$input-height: 52px;
+
+$btn-border-radius: 0.625rem; //10px
+$btn-border-radius-rounded: 1.25rem; //20px
+$btn-height-lg: 52px;
+$btn-height-md: 42px;
+
+$label-color: $gray-darker;
+$jaguar: #29292e;
+
+$light-orange: #fff8e4;
+$purple: #4a50ff;
+$orange: #fa8717;
+$light-purple: #739cff;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1700px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1615px
+);

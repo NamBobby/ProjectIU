@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'iCiel Gotham Rounded';
+    src: url('iCielGothamRounded-Bold.eot');
+    src: url('iCielGothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('iCielGothamRounded-Bold.woff2') format('woff2'),
+        url('iCielGothamRounded-Bold.woff') format('woff'),
+        url('iCielGothamRounded-Bold.ttf') format('truetype'),
+        url('iCielGothamRounded-Bold.svg#iCielGothamRounded-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham Rounded';
+    src: url('iCielGothamRounded-BoldItalic.eot');
+    src: url('iCielGothamRounded-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('iCielGothamRounded-BoldItalic.woff2') format('woff2'),
+        url('iCielGothamRounded-BoldItalic.woff') format('woff'),
+        url('iCielGothamRounded-BoldItalic.ttf') format('truetype'),
+        url('iCielGothamRounded-BoldItalic.svg#iCielGothamRounded-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham Rounded';
+    src: url('iCielGothamRounded-Book.eot');
+    src: url('iCielGothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+        url('iCielGothamRounded-Book.woff2') format('woff2'),
+        url('iCielGothamRounded-Book.woff') format('woff'),
+        url('iCielGothamRounded-Book.ttf') format('truetype'),
+        url('iCielGothamRounded-Book.svg#iCielGothamRounded-Book') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham Rounded';
+    src: url('iCielGothamRounded-Light.eot');
+    src: url('iCielGothamRounded-Light.eot?#iefix') format('embedded-opentype'),
+        url('iCielGothamRounded-Light.woff2') format('woff2'),
+        url('iCielGothamRounded-Light.woff') format('woff'),
+        url('iCielGothamRounded-Light.ttf') format('truetype'),
+        url('iCielGothamRounded-Light.svg#iCielGothamRounded-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham Rounded';
+    src: url('iCielGothamRounded-BookItalic.eot');
+    src: url('iCielGothamRounded-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('iCielGothamRounded-BookItalic.woff2') format('woff2'),
+        url('iCielGothamRounded-BookItalic.woff') format('woff'),
+        url('iCielGothamRounded-BookItalic.ttf') format('truetype'),
+        url('iCielGothamRounded-BookItalic.svg#iCielGothamRounded-BookItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham Rounded';
+    src: url('iCielGothamRounded-LightItalic.eot');
+    src: url('iCielGothamRounded-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('iCielGothamRounded-LightItalic.woff2') format('woff2'),
+        url('iCielGothamRounded-LightItalic.woff') format('woff'),
+        url('iCielGothamRounded-LightItalic.ttf') format('truetype'),
+        url('iCielGothamRounded-LightItalic.svg#iCielGothamRounded-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham Rounded';
+    src: url('iCielGothamRounded-MediumItalic.eot');
+    src: url('iCielGothamRounded-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('iCielGothamRounded-MediumItalic.woff2') format('woff2'),
+        url('iCielGothamRounded-MediumItalic.woff') format('woff'),
+        url('iCielGothamRounded-MediumItalic.ttf') format('truetype'),
+        url('iCielGothamRounded-MediumItalic.svg#iCielGothamRounded-MediumItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Bango';
+    src: url('SVN-Bango.eot');
+    src: url('SVN-Bango.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Bango.woff2') format('woff2'),
+        url('SVN-Bango.woff') format('woff'),
+        url('SVN-Bango.ttf') format('truetype'),
+        url('SVN-Bango.svg#SVN-Bango') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham Rounded';
+    src: url('iCielGothamRounded-Medium.eot');
+    src: url('iCielGothamRounded-Medium.eot?#iefix') format('embedded-opentype'),
+        url('iCielGothamRounded-Medium.woff2') format('woff2'),
+        url('iCielGothamRounded-Medium.woff') format('woff'),
+        url('iCielGothamRounded-Medium.ttf') format('truetype'),
+        url('iCielGothamRounded-Medium.svg#iCielGothamRounded-Medium') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "iCiel Gotham Rounded";
+  src: url("../fonts/iCielGothamRounded-Bold.eot");
+  src: url("../fonts/iCielGothamRounded-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iCielGothamRounded-Bold.woff2") format("woff2"),
+    url("../fonts/iCielGothamRounded-Bold.woff") format("woff"),
+    url("../fonts/iCielGothamRounded-Bold.ttf") format("truetype"),
+    url("../fonts/iCielGothamRounded-Bold.svg#iCielGothamRounded-Bold")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iCiel Gotham Rounded";
+  src: url("../fonts/iCielGothamRounded-BoldItalic.eot");
+  src: url("../fonts/iCielGothamRounded-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iCielGothamRounded-BoldItalic.woff2") format("woff2"),
+    url("../fonts/iCielGothamRounded-BoldItalic.woff") format("woff"),
+    url("../fonts/iCielGothamRounded-BoldItalic.ttf") format("truetype"),
+    url("../fonts/iCielGothamRounded-BoldItalic.svg#iCielGothamRounded-BoldItalic")
+      format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iCiel Gotham Rounded";
+  src: url("../fonts/iCielGothamRounded-Book.eot");
+  src: url("../fonts/iCielGothamRounded-Book.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iCielGothamRounded-Book.woff2") format("woff2"),
+    url("../fonts/iCielGothamRounded-Book.woff") format("woff"),
+    url("../fonts/iCielGothamRounded-Book.ttf") format("truetype"),
+    url("../fonts/iCielGothamRounded-Book.svg#iCielGothamRounded-Book")
+      format("svg");
+  /* font-weight: 300; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iCiel Gotham Rounded Light";
+  src: url("../fonts/iCielGothamRounded-Light.eot");
+  src: url("../fonts/iCielGothamRounded-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iCielGothamRounded-Light.woff2") format("woff2"),
+    url("../fonts/iCielGothamRounded-Light.woff") format("woff"),
+    url("../fonts/iCielGothamRounded-Light.ttf") format("truetype"),
+    url("../fonts/iCielGothamRounded-Light.svg#iCielGothamRounded-Light")
+      format("svg");
+  /* font-weight: 300; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iCiel Gotham Rounded";
+  src: url("../fonts/iCielGothamRounded-BookItalic.eot");
+  src: url("../fonts/iCielGothamRounded-BookItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iCielGothamRounded-BookItalic.woff2") format("woff2"),
+    url("../fonts/iCielGothamRounded-BookItalic.woff") format("woff"),
+    url("../fonts/iCielGothamRounded-BookItalic.ttf") format("truetype"),
+    url("../fonts/iCielGothamRounded-BookItalic.svg#iCielGothamRounded-BookItalic")
+      format("svg");
+  /* font-weight: 300; */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iCiel Gotham Rounded";
+  src: url("../fonts/iCielGothamRounded-LightItalic.eot");
+  src: url("../fonts/iCielGothamRounded-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iCielGothamRounded-LightItalic.woff2") format("woff2"),
+    url("../fonts/iCielGothamRounded-LightItalic.woff") format("woff"),
+    url("../fonts/iCielGothamRounded-LightItalic.ttf") format("truetype"),
+    url("../fonts/iCielGothamRounded-LightItalic.svg#iCielGothamRounded-LightItalic")
+      format("svg");
+  /* font-weight: 300; */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iCiel Gotham Rounded";
+  src: url("../fonts/iCielGothamRounded-MediumItalic.eot");
+  src: url("../fonts/iCielGothamRounded-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iCielGothamRounded-MediumItalic.woff2") format("woff2"),
+    url("../fonts/iCielGothamRounded-MediumItalic.woff") format("woff"),
+    url("../fonts/iCielGothamRounded-MediumItalic.ttf") format("truetype"),
+    url("../fonts/iCielGothamRounded-MediumItalic.svg#iCielGothamRounded-MediumItalic")
+      format("svg");
+  /* font-weight: 300; */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Bango";
+  src: url("../fonts/SVN-Bango.eot");
+  src: url("../fonts/SVN-Bango.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SVN-Bango.woff2") format("woff2"),
+    url("../fonts/SVN-Bango.woff") format("woff"),
+    url("../fonts/SVN-Bango.ttf") format("truetype"),
+    url("../fonts/SVN-Bango.svg#SVN-Bango") format("svg");
+  /* font-weight: normal; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iCiel Gotham Rounded";
+  src: url("../fonts/iCielGothamRounded-Medium.eot");
+  src: url("../fonts/iCielGothamRounded-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/iCielGothamRounded-Medium.woff2") format("woff2"),
+    url("../fonts/iCielGothamRounded-Medium.woff") format("woff"),
+    url("../fonts/iCielGothamRounded-Medium.ttf") format("truetype"),
+    url("../fonts/iCielGothamRounded-Medium.svg#iCielGothamRounded-Medium")
+      format("svg");
+  /* font-weight: 300; */
+  font-style: normal;
+  font-display: swap;
+}

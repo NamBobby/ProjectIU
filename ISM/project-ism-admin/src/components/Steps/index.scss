@@ -1,0 +1,42 @@
+$orange: #fa8717;
+$border-radius: 10px; //10px
+$white: #fff;
+.steps__header-wrapper {
+  .steps__header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+
+    .step {
+      border-radius: $border-radius;
+      padding: 10px 20px;
+      color: $orange;
+      background-color: $white;
+      border: 1px solid $orange;
+      margin-right: 30px;
+      text-align: center;
+      min-width: 300px;
+      position: relative;
+      &:not(:last-child)::after {
+        border-bottom: 2px dashed $orange;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        width: calc(100% + 40px);
+        left: 0;
+        right: 0;
+        z-index: -1;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      &-active {
+        color: $white;
+        background-color: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.coming__page {
+    .comingsoon-area {
+        position: relative;
+
+        .comingsoon-inner-area {
+            margin: auto;
+
+            .wrapComing {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 30px;
+
+                .wrapComingImage {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-bottom: 27px;
+                }
+
+                .wrapComingTitle {
+                    margin-bottom: 20px;
+                    position: relative;
+                    width: 288px;
+                    height: 101px;
+
+                    .coming-img {
+                        position: absolute;
+
+                        &.coming-sieutrinho {
+                            z-index: 1;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            width: 288px;
+                            height: 58.56px;
+
+                        }
+
+                        &.coming-hocduong {
+                            z-index: 2;
+                            bottom: 0;
+                            left: 60px;
+                            right: auto;
+                            width: 168.4px;
+                            height: 49.54px;
+                        }
+                    }
+                }
+
+                .wrapComingSubtitle {
+                    display: flex;
+                }
+            }
+
+            .contentComing {
+                display: flex;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 54px;
+                line-height: 140%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #EA5023;
+
+            }
+
+        }
+
+        .box-wrap-elephants {
+            position: absolute;
+            z-index: 3;
+            left: 10px;
+            bottom: 10px;
+
+            .wrap-elephants {
+                z-index: 3;
+                position: relative;
+                align-items: center;
+                vertical-align: middle;
+                display: table-cell;
+                width: 112px;
+                height: 113.47px;
+            }
+
+            .wrap-elephants-img {
+                width: 112px;
+                height: 113.47px;
+                position: relative;
+            }
+
+            .elephants-img {
+                width: 112px;
+
+            }
+
+            .wrap-book {
+                width: 112px;
+                z-index: 3;
+                position: absolute;
+                bottom: 0px;
+                align-items: center;
+                text-align: center;
+                padding-left: 50px;
+                animation: movebounce 5s linear infinite;
+            }
+
+            .wrap-book-img {
+                width: 44.46px;
+            }
+        }
+
+        .box-wrap-elephants-ball {
+            z-index: 3;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+
+            .wrap-elephants-ball {
+                z-index: 3;
+                position: relative;
+                width: 161.07px;
+                height: 135.93px;
+                align-items: center;
+                vertical-align: middle;
+                display: table-cell;
+            }
+
+            .wrap-elephants-ball-img {
+                width: 161.07px;
+                height: 131.93px;
+                position: relative;
+            }
+
+            .wrap-ball-img-elephants {
+                width: 161.07px;
+            }
+
+            .wrap-ball-img-elephants {
+                z-index: 2;
+                position: absolute;
+                left: 10px;
+            }
+
+            .wrap-ball {
+                width: 36.74px;
+                z-index: 3;
+                position: absolute;
+                bottom: 0px;
+                text-align: left;
+                animation: moveLeftToRight 5s linear infinite;
+            }
+
+            .wrap-ball-img {
+                width: 36.74px;
+                animation: spin 5s linear infinite;
+            }
+        }
+
+    }
+}

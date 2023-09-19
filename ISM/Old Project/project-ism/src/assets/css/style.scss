@@ -1,0 +1,948 @@
+/*
+@File: Mojosa Template Styles
+
+* This file contains the styling for the actual tepmlate, this
+is the file you need to edit to change the look of the
+tepmlate.
+
+
+
+*******************************************
+*******************************************
+
+==== INDEX PAGE CSS
+
+** - Default CSS
+** - Preloader CSS
+** - Navbar CSS
+** - Main Banner CSS
+** - About CSS
+** - Features CSS
+** - Product New Features CSS
+** - Services CSS
+** - Book Discover CSS
+** - Overview CSS
+** - CTA CSS
+** - SAAS Tools CSS
+** - Fun Facts CSS
+** - Work Process CSS
+** - Pricing CSS
+** - Project CSS
+** - Project Details CSS
+** - Gallery CSS
+** - Get Started CSS
+** - How App Works CSS
+** - Screenshot CSS
+** - Team CSS
+** - Next Generation CSS
+** - Feedback CSS
+** - App Download CSS
+** - Platform Connect CSS
+** - Blog CSS
+** - Blog Details CSS
+** - Boxes CSS
+** - Join CSS
+** - Analysis CSS
+** - Partner CSS
+** - Subscribe CSS
+** - Product CSS
+** - Product Details CSS
+** - Page Title CSS
+** - Pagination CSS
+** - Sidebar CSS
+** - Login CSS
+** - Signup CSS
+** - FAQ CSS
+** - Error 404 CSS
+** - Coming Soon CSS
+** - Cart CSS
+** - Checkout CSS
+** - Contact Us CSS
+** - Footer CSS
+** - Back To Top CSS
+*/
+
+/*================================================
+Default CSS
+=================================================*/
+@import "variables";
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Lexend:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+@import url("./font.face.css");
+
+body {
+  font-family: var(--fontFamily);
+  padding: 0;
+  margin: 0;
+
+  // background-color: #012282;
+  // .content-footer {
+  //   // background-color: red;
+  // }
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(#001529, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #a2afb6;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    border-radius: 4px;
+  }
+
+  @supports (scrollbar-width: thin) {
+    scrollbar-width: thin;
+  }
+}
+.ant-popover {
+  width: 500px;
+
+  .ant-popover-title {
+    font-family: "SVN-Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #003459;
+  }
+
+  .cart-content {
+    // width: 100%;
+    &__item {
+      margin: 20px 0;
+      position: relative;
+      cursor: pointer;
+
+      // &:hover {
+      //   .btn-delete {
+      //     animation: pulse; /* referring directly to the animation's @keyframe declaration */
+      //     animation-duration: 1s; /* don't forget to set a duration! */
+      //   }
+      // }
+
+      .btn-delete {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &-image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .image-cart {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      &-title {
+        font-family: "SVN-Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #00171f;
+        text-transform: uppercase;
+      }
+      &-description {
+        font-family: "SVN-Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: #667479;
+      }
+      &-price {
+        font-family: "SVN-Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #00171f;
+      }
+    }
+  }
+
+  .cart-total {
+    // width: fit-content;
+    margin: 10px 0;
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &-title {
+        font-family: "SVN-Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #00171f;
+        text-transform: uppercase;
+      }
+
+      &-price {
+        font-family: "SVN-Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 18px;
+        color: #667479;
+      }
+    }
+  }
+
+  .cart-payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+
+    .btn-payment {
+      height: 48px;
+      background: #003459;
+      border-radius: 20px;
+      padding: 0px 40px;
+      span {
+        font-family: "SVN-Gilroy";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fdfdfd;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+a {
+  color: var(--blackColor);
+  text-decoration: none;
+  transition: 0.4s;
+  display: inline-block;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--templateColor2);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+
+  &-cell {
+    vertical-align: middle;
+  }
+
+  .d-title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 60px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: -2px 1.7px 0px #ea5023, -3px 3px 5px #cf3115,
+        -2px 2px 2px rgba(185, 60, 6, 0.76),
+        -4.59183px 4.59183px 9.18366px #c84d19;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 54px 0px;
+    }
+  }
+}
+
+.ptb-100 {
+  padding: {
+    top: 100px;
+    bottom: 100px;
+  }
+}
+
+.ptb-50 {
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  }
+}
+
+.bg-gray {
+  background-color: #edf5ff;
+}
+
+.owl-carousel {
+  .owl-stage {
+    display: flex;
+  }
+}
+
+p {
+  font-size: 16px;
+  color: var(--paragraphColor);
+  line-height: 1.6;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+button {
+  outline: 0 !important;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+/* btn btn-primary */
+.btn-primary {
+  color: var(--whiteColor);
+  background-color: var(--templateColor);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--whiteColor);
+    background: var(--templateColor2);
+    transform: translateY(-5px);
+  }
+
+  &.focus,
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    color: var(--whiteColor);
+    background: var(--templateColor);
+    transform: translateY(-5px);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: var(--whiteColor);
+    background-color: var(--templateColor2);
+    border-color: var(--templateColor2);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background: var(--templateColor);
+    }
+  }
+}
+
+/* btn btn-blue */
+.btn-blue {
+  color: var(--whiteColor);
+  background-color: var(--blue);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--whiteColor);
+    background: var(--blueActive);
+    transform: translateY(-5px);
+  }
+
+  &.focus,
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-blue.dropdown-toggle:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
+  .show > .btn-blue.dropdown-toggle {
+    color: var(--whiteColor);
+    background: var(--blueActive);
+    transform: translateY(-5px);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: var(--whiteColor);
+    background-color: var(--blueActive);
+    border-color: var(--blueActive);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background: var(--blueActive);
+    }
+  }
+}
+
+/* btn btn-pink */
+.btn-pink {
+  color: var(--whiteColor);
+  background-color: var(--pink);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--whiteColor);
+    background: var(--pinkHover);
+    transform: translateY(-5px);
+  }
+
+  &.focus,
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-blue.dropdown-toggle:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
+  .show > .btn-blue.dropdown-toggle {
+    color: var(--whiteColor);
+    background: var(--pinkHover);
+    transform: translateY(-5px);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: var(--whiteColor);
+    background-color: var(--pinkHover);
+    border-color: var(--pinkHover);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background: var(--pinkHover);
+    }
+  }
+}
+
+/* btn btn-light-blue */
+.btn-light-blue {
+  color: var(--whiteColor);
+  background-color: var(--lightBlue);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--whiteColor);
+    background: var(--lightBlueHover);
+    transform: translateY(-5px);
+  }
+
+  &.focus,
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-blue.dropdown-toggle:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
+  .show > .btn-blue.dropdown-toggle {
+    color: var(--whiteColor);
+    background: var(--lightBlueHover);
+    transform: translateY(-5px);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: var(--whiteColor);
+    background-color: var(--lightBlueHover);
+    border-color: var(--lightBlueHover);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background: var(--lightBlueHover);
+    }
+  }
+}
+
+/* btn btn-mint */
+.btn-mint {
+  color: var(--whiteColor);
+  background-color: var(--mint);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--whiteColor);
+    background: var(--mintHover);
+    transform: translateY(-5px);
+  }
+
+  &.focus,
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-blue.dropdown-toggle:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
+  .show > .btn-blue.dropdown-toggle {
+    color: var(--whiteColor);
+    background: var(--mintHover);
+    transform: translateY(-5px);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: var(--whiteColor);
+    background-color: var(--mintHover);
+    border-color: var(--mintHover);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background: var(--mintHover);
+    }
+  }
+}
+
+/* btn btn-green */
+.btn-green {
+  color: var(--whiteColor);
+  background-color: var(--green);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--whiteColor);
+    background: var(--greenHover);
+    transform: translateY(-5px);
+  }
+
+  &.focus,
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-blue.dropdown-toggle:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
+  .show > .btn-blue.dropdown-toggle {
+    color: var(--whiteColor);
+    background: var(--greenHover);
+    transform: translateY(-5px);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: var(--whiteColor);
+    background-color: var(--greenHover);
+    border-color: var(--greenHover);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background: var(--greenHover);
+    }
+  }
+}
+
+/* btn btn-purple */
+.btn-purple {
+  color: var(--whiteColor);
+  background-color: var(--purpule);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--whiteColor);
+    background: var(--purpleHover);
+    transform: translateY(-5px);
+  }
+
+  &.focus,
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-blue.dropdown-toggle:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
+  .show > .btn-blue.dropdown-toggle {
+    color: var(--whiteColor);
+    background: var(--purpleHover);
+    transform: translateY(-5px);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: var(--whiteColor);
+    background-color: var(--purpleHover);
+    border-color: var(--purpleHover);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background: var(--purpleHover);
+    }
+  }
+}
+
+/* btn btn-yellow */
+.btn-yellow {
+  color: var(--whiteColor);
+  background-color: var(--yellow);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--whiteColor);
+    background: var(--yellowHover);
+    transform: translateY(-5px);
+  }
+
+  &.focus,
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-blue.dropdown-toggle:focus {
+    box-shadow: unset;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active,
+  .show > .btn-blue.dropdown-toggle {
+    color: var(--whiteColor);
+    background: var(--yellowHover);
+    transform: translateY(-5px);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: var(--whiteColor);
+    background-color: var(--yellowHover);
+    border-color: var(--yellowHover);
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background: var(--yellowHover);
+    }
+  }
+}
+
+.btn {
+  font: {
+    weight: 700;
+    size: 15px;
+  }
+
+  border: none;
+  padding: 13px 31px;
+  text-transform: uppercase;
+  position: relative;
+  box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
+  z-index: 1;
+  transition: 0.9s;
+
+  &.block {
+    width: 100%;
+  }
+
+  &.btn-primary {
+    border-radius: 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0;
+      transition: 0.4s;
+      background: var(--templateColor2);
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  &.btn-blue {
+    border-radius: 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0;
+      transition: 0.4s;
+      background: var(--blueActive);
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  &.btn-light-blue {
+    border-radius: 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0;
+      transition: 0.4s;
+      background: var(--lightBlueHover);
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  &.btn-mint {
+    border-radius: 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0;
+      transition: 0.4s;
+      background: var(--mintHover);
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  &.btn-green {
+    border-radius: 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0;
+      transition: 0.4s;
+      background: var(--greenHover);
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  &.btn-purple {
+    border-radius: 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0;
+      transition: 0.4s;
+      background: var(--purpleHover);
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  &.btn-yellow {
+    border-radius: 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0;
+      transition: 0.4s;
+      background: var(--yellowHover);
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  &.btn-pink {
+    border-radius: 20px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 0;
+      transition: 0.4s;
+      background: var(--pinkHover);
+      z-index: -1;
+      border-radius: 20px;
+    }
+  }
+
+  &::after {
+    left: 0;
+  }
+
+  &::before {
+    right: 0;
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      width: 50%;
+    }
+  }
+}
+
+/* section title */
+.section-title {
+  text-align: center;
+  max-width: 720px;
+
+  margin: {
+    bottom: 50px;
+    top: -6px;
+    left: auto;
+    right: auto;
+  }
+
+  h2 {
+    font: {
+      size: 35px;
+      weight: 700;
+    }
+
+    margin-bottom: 0;
+  }
+
+  p {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .bar {
+    height: 4px;
+    width: 85px;
+    background: var(--templateColor);
+    margin: 20px auto 25px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 5px;
+      background: var(--whiteColor);
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-name: MOVE-BG;
+    }
+  }
+}
+
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(85px);
+  }
+}
+
+@keyframes MOVE-BG {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(85px);
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}

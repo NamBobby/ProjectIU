@@ -1,0 +1,362 @@
+@import "../../../assets/scss/variables/variables";
+
+.bg-form {
+	background: #f8f8fc !important;
+	padding: 12px 24px 0px 24px !important;
+	border-radius: 20px;
+}
+.formBlockTitle {
+	margin-bottom: 24px;
+	color: $jaguar;
+	font-weight: 700;
+}
+.formSelect {
+	height: 48px;
+	border: 1px solid #d8d6de;
+}
+.avatarContainer {
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+.changeAvatarButton {
+	background: #fff !important;
+	border: none;
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.03);
+	border-radius: 10px;
+	color: #586267;
+	&:active {
+		background: #fff !important;
+	}
+	&:focus {
+		background: #fff !important;
+	}
+}
+.changeAvatarText {
+	color: #586267;
+	margin-left: 14px;
+}
+.outlineButton {
+	border: 1px solid #ea5023 !important;
+	border-radius: 10px !important;
+	margin-top: 16px !important;
+	background: #fff !important;
+	color: #ea5023 !important;
+	height: 52px !important;
+	&:focus {
+		background: #fff !important;
+	}
+}
+.filledButton {
+	height: 52px !important;
+}
+.activeCodeInput {
+	margin-bottom: 16px;
+	text-align: center;
+	height: 52px;
+	&:valid {
+		text-transform: uppercase;
+	}
+}
+.hotlineText {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
+	color: $jaguar;
+}
+
+.tutorText {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
+	color: #586267;
+}
+.videoWrapper {
+	border-width: 0;
+	border-radius: 20px;
+	min-height: 400px;
+}
+.cancelButton {
+	background: $white !important;
+	border: none;
+	margin-bottom: 50px;
+	color: $danger !important;
+	box-shadow: 0px 4px 40px -2px rgba(0, 0, 0, 0.1);
+	&:focus {
+		background: $white !important;
+	}
+}
+.noPaddingVertical {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+.paddingView {
+	height: 100px;
+}
+.react-datepicker__input-container {
+	input {
+		background-color: #fff;
+		height: 52px;
+		border: 1px solid #d8d6de;
+		border-radius: 0.375rem;
+		padding: 0.438rem 1rem;
+		display: block;
+		width: 100%;
+		height: 52px;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.45;
+		color: #6e6b7b;
+		transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+}
+
+.label_info {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+
+	text-transform: uppercase;
+
+	/* COLOR/DARK/2 */
+
+	color: #7c7c80;
+	margin-bottom: 10px;
+}
+
+.btn-send-code__confirm {
+	color: #ea5023 !important;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 140%;
+	/* or 17px */
+
+	text-align: center;
+
+	/* COLOR/PRIMARY/1 */
+	outline: none;
+	border: unset;
+	width: auto !important;
+	height: 52px !important;
+	background: #fee6cf !important;
+	border-radius: 10px !important;
+	box-shadow: unset !important;
+
+	margin-left: 8px;
+}
+
+.form-infoUser {
+	.form-group {
+		.form-label {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 140%;
+			/* identical to box height, or 20px */
+
+			/* COLOR/DARK/2 */
+
+			color: #7c7c80;
+
+			mix-blend-mode: normal;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.box-user__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	img {
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	.box-fullname {
+		padding: 9px 11px;
+		background: #ffffff;
+		box-shadow: 0px 4px 40px -2px rgba(61, 61, 61, 0.1);
+		border-radius: 10px;
+		margin-top: 16px;
+		max-width: 220px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		span {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 140%;
+			/* or 22px */
+
+			/* #586267 */
+
+			color: #606067;
+		}
+	}
+}
+
+.box-active-class {
+	max-width: 510px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	.form-group {
+		max-width: 100%;
+
+		.icon-check-validate {
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+		}
+	}
+
+	.field-choose-class {
+		max-width: 100%;
+
+		.group-checkbox {
+			display: flex;
+			flex-wrap: wrap;
+			// flex-direction: column;
+			// gap: 20px;
+		}
+	}
+}
+
+.field-choose-class {
+	margin-top: 24px;
+	span {
+		margin-bottom: 8;
+		font-size: 14;
+		color: #7c7c80;
+	}
+
+	.group-checkbox {
+		display: flex;
+		gap: 20px;
+	}
+}
+
+.field-email-otp {
+	.invalid-feedback {
+		bottom: unset;
+	}
+}
+
+.container-checkbox {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	font-size: 30px;
+	user-select: none;
+	padding-left: 40px;
+	margin-bottom: 10px;
+	min-width: 91px;
+}
+.container-checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 32px;
+	height: 32px;
+	background: transparent;
+	border: 1px solid #7c7c80;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+
+.checkmark.disabled {
+	border: 1px solid #cbcbcb;
+	cursor: unset;
+}
+
+.container-checkbox:hover .checkmark {
+	background: transparent;
+	border: 1px solid #7c7c80;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+
+.container-checkbox:hover .checkmark.disabled {
+	border: 1px solid #cbcbcb;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.container-checkbox .checkmark:after {
+	top: 40%;
+	left: 50%;
+	width: 10px;
+	transform: translateX(-50%);
+	height: 15px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.container-checkbox input:checked ~ .checkmark {
+	background: #ea5023;
+	border: unset;
+}
+.container-checkbox input:checked ~ .checkmark.disabled {
+	background: #cbcbcb;
+	border: unset;
+}
+.container-checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.mb-27px {
+	margin-bottom: 27px;
+}
+
+.card {
+	border-radius: 20px;
+	box-shadow: none;
+	margin-bottom: 2rem;
+	border: unset !important;
+}
+
+.filledButton {
+	border-color: #ea5023 !important;
+	background-color: #ea5023 !important;
+
+	padding: 9px 11px;
+	border-radius: 0.625rem;
+
+	min-width: 300px;
+	font-size: 18px;
+	font-weight: 500;
+
+	&:hover {
+		box-shadow: 0 0px 5px 0px #ea5023 !important;
+	}
+
+	&:active {
+		background-color: #de4315 !important;
+		box-shadow: unset;
+	}
+
+	&.disabled {
+		opacity: 0.65;
+	}
+}

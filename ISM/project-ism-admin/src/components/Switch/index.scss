@@ -1,0 +1,152 @@
+@import '@assets/css/_variables.scss';
+
+.toggleWrapper {
+    .knobs {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--whiteColor);
+        border: 1px solid var(--primaryColor);
+        border-radius: 6px;
+        transition: 0.3s ease all;
+        z-index: 1;
+    }
+
+    .toggle-switch {
+        position: relative;
+        width: 90px;
+        height: 31px;
+        overflow: hidden;
+
+        &.b2 {
+            border-radius: 6px;
+        }
+
+
+
+        &#switch-btn {
+            .knobs {
+                background-color: var(--whiteColor);
+                border: 1px solid var(--primaryColor);
+                border-radius: 6px;
+                transition: 0.3s ease all;
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    transition: 0.3s ease all;
+                    content: '';
+                    width: 50%;
+                    background-color: var(--primaryColor);
+                    padding: 5px 10px 4px 8px;
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    color: var(--whiteColor);
+                    z-index: 1;
+                }
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 50%;
+                    transition: 0.3s ease all;
+                    padding: 5px 10px 4px 10px;
+                    content: 'ENG';
+                    color: var(--primaryColor);
+                    display: flex;
+                    z-index: 1;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                }
+
+                span {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-align: center;
+                    transition: 0.3s ease all;
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 10px 4px 8px;
+                    height: 100%;
+                    width: 50%;
+                    color: var(--whiteColor);
+                    z-index: 1;
+                    position: absolute;
+                }
+            }
+
+            .checkbox {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                opacity: 0;
+                cursor: pointer;
+                z-index: 3;
+
+
+                &:checked+.knobs {
+                    background-color: var(--whiteColor);
+
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: var(--primaryColor);
+                        display: flex;
+                        align-items: center;
+
+                    }
+
+                    &:before {
+                        left: 50%;
+                        background-color: var(--primaryColor);
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+
+                        border-top-right-radius: 0px;
+                        border-bottom-right-radius: 0px;
+                    }
+
+                    &:after {
+                        color: var(--whiteColor);
+
+                    }
+                }
+
+                &:checked~.layer {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-align: center;
+                    background-color: var(--whiteColor);
+                }
+            }
+        }
+    }
+}

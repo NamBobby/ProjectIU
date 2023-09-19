@@ -1,0 +1,30 @@
+@import "variables";
+
+$media: screen;
+$feature_min: min-width;
+$feature_max: max-width;
+$value_one: 767px;
+$value_two: 768px;
+$value_three: 991px;
+$value_four: 992px;
+$value_five: 1199px;
+$value_six: 1200px;
+$value_seven: 1350px;
+$value_eight: 1910px;
+
+/* Max width (767px) */
+@media only #{$media} and ($feature_max : $value_one) {}
+
+/* Min width (768px) to Max width (991px) */
+@media only #{$media} and ($feature_min : $value_two) and ($feature_max : $value_three) {}
+
+/* Min width (992px) to Max width (1199px) */
+@media only #{$media} and ($feature_min : $value_four) and ($feature_max : $value_five) {}
+
+/* Min width (1200px) to Max width (1350px) */
+@media only #{$media} and ($feature_min : $value_six) and ($feature_max : $value_seven) {}
+
+/* Min width (1910px) */
+@media only #{$media} and ($feature_min : $value_eight) {}
+
+@media only screen and (min-width: 1824px) {}

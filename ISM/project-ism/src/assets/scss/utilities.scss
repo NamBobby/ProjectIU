@@ -1,0 +1,147 @@
+//text
+.text-underline{
+	text-decoration: underline;
+}
+.text-sub {
+    color: $sub !important;
+}
+.text-black{
+    color: $gray-darker;
+}
+.font-size-lg{
+    font-size: 17px;
+}
+.font-size-md{
+    font-size: $font-size-md;
+}
+.font-weight-bold{
+    font-family: 'NunitoBold' !important;
+}
+//end text
+
+//button
+button.btn{
+    height: $btn-height-md;
+    font-size: $font-size-md;
+    padding: 9px 11px;
+    border-radius: $btn-border-radius;
+    svg{
+        margin-right: 14px;
+    }
+}
+.btn-lg{
+    height: $btn-height-lg;
+}
+.btn-md {
+    height: $btn-height-md;
+    font-size: $font-size-md;
+}
+.btn-large {
+    max-width: 295px;
+    width: 100%;
+    text-align: center;
+}
+.btn-white{
+    background-color: $white;
+    color: $gray-dark;
+    &:hover{
+        box-shadow: 0px 0px 10px 0px rgba($color: $gray-dark, $alpha: 0.5);
+    }
+}
+.btn-shadow{
+    box-shadow: 0px 4px 40px -2px rgba(61, 61, 61, 0.1);
+}
+.btn-outline-primary-white{
+	box-shadow: 0px 4px 40px -2px rgba(61, 61, 61, 0.1);
+	&:hover, &:focus, &:active, &.active{
+		box-shadow: 0px 0px 7px -2px #bebebe
+	}
+}
+.btn-orange {
+    background-color: #FEE6CF;
+    line-height: 16.8px;
+    font-size: 12px;
+    color: $sub;
+    transition: .2s;
+    height: $input-height;
+    &:hover{
+        transition: .2s;
+        background-color: $sub;
+        color: #FEE6CF;
+    }
+}
+.btn-rounded{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: $btn-border-radius-rounded !important;
+}
+//end button
+
+//background
+.bg-danger-darker{
+    background: #E03E0E;
+}
+.bg-gray {
+    background: $gray
+}
+//end background
+
+//border
+.border-radius {
+    border-radius: $border-radius;
+}
+.border-rounded {
+    border-radius: $border-rounded;
+}
+.border-light{
+    border-color: $border-color;
+}
+.border-dashed-warning {
+    border: 1px dashed $warning;
+}
+
+//flex
+.flex-center{
+    display: flex !important;
+    align-items: center !important;
+}
+
+//card
+.card{
+    &.card-gray{
+        background-color: $gray;
+        border-radius: 20px;
+    }
+    &.card-orange{
+        background-color: #FFF8E4;
+        border: 1px solid #FFF8E4;
+        &:hover{
+            border: 1px solid $warning;
+        }
+    }
+    &.card-white{
+        background-color: $white;
+        &:hover{
+            border: 1px solid $white;
+        }
+    }
+}
+
+//tag
+.tag{
+    font-size: $font-size-md;
+    border-radius: $border-radius;
+    padding: 16px 24px;
+}
+.tag-warning{
+    border: 1px solid $warning;
+    background-color: rgba($color: $warning, $alpha: 0.1);
+}
+
+//hr
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid $border-color-gray;
+}
