@@ -1,0 +1,146 @@
+import { StyleSheet } from 'react-native';
+
+const ResultStyle = StyleSheet.create({
+  container: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#FFFFFF",
+    width: 375,
+    height: 812,
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  topinfo: {
+    backgroundColor: "#6ea9f7",
+    borderRadius: 30,
+    width: '100%',
+    height: 490,
+    display: "flex",
+    flexDirection: 'column',
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  info: {
+    marginTop: 25,
+    width: 375,
+    height: 100,
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  backmenu: {
+    marginLeft: 20,
+    width: 55,
+    height: 55,
+    display: "flex",
+    flexDirection: "column",
+  },
+  infos: {
+    marginLeft: 575,
+    width: 375,
+    height: 55,
+    display: "flex",
+    flexDirection: "row",
+  },
+  rectangleA: {
+    width: 55,
+    height: 55,
+    backgroundColor: "#6ea9f7",
+    padding: 5,
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  mainphoto: {
+    width: 300,
+    height: 300,
+  },
+  content: {
+    width: 300,
+    height: 300,
+  },
+  elipse2: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 300,
+    height: 300,
+    borderRadius: 150,
+    borderWidth: 3,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+  },
+  elipse: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 275,
+    height: 275,
+    borderRadius: 137.5,
+    backgroundColor: '#FFFFFF',
+  },
+  img: {
+    width: 250,
+    height: 250,
+    borderRadius: 125,
+  },
+  bottominfo: {
+    backgroundColor: '#FFFFFF',
+    width: '100%',
+    height: 322,
+    borderRadius: 30,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  circleChart: {
+    position: 'relative',
+    width: 250,
+    height: 250,
+    margin: 10
+  },
+  circleChartPercentage: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 250,
+    height: 250,
+    transform: [{ rotate: "-90deg" }]
+  },
+  circleChartBackground: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%'
+  },
+  contents: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    position: 'absolute',
+    top: 75,
+    left: -25,
+    backgroundColor: '#FFB3C6',
+    transform: [ { rotate: "90deg" } ,{ translateX: -50 }, { translateY: -50 }],
+  },
+  scanningText: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 27,
+    lineHeight: 32,
+    color: '#000',
+  },
+  resultText: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 27,
+    lineHeight: 32,
+    color: '#000',
+  },
+});
+
+export default ResultStyle;
