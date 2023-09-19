@@ -1,9 +1,0 @@
-export const GET_DATA_CART = "GET_DATA_CART";
-export const SET_DATA_CART = "SET_DATA_CART";
-export const GET_LIST_CART = "GET_LIST_CART";
-export const CREATE_CART = "CREATE_CART";
-export const DELETE_CART = "DELETE_CART";
-export const SET_LOADING_CART = "SET_LOADING_CART";
-export const RESET_CART = "RESET_CART";
-export const SET_ERROR_CART = "SET_ERROR_CART";
-export const SET_SUCCESS_CART = "SET_SUCCESS_CART";
