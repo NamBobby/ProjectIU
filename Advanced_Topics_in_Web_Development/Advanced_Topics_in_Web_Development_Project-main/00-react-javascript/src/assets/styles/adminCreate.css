@@ -1,0 +1,246 @@
+.adminCreate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+  }
+  
+  p {
+    color: var(--color-text-secondary);
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .adminCreate-box {
+    width: 100%;
+    max-width: 650px;
+    max-height: 900px;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .adminCreate-form {
+    width: 80%;
+  }
+  
+  .adminCreate-title {
+    color: var(--color-secondary);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input  */
+  .adminCreate-form .ant-input-outlined,
+  .adminCreate-form .ant-input-outlined:not(:focus) {
+    background-color: var(--color-background-fifth) !important;
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-background-fifth) !important; 
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    transition: border 0.3s ease;
+  }
+  
+  /* Focus Input & Input.Password */
+  .adminCreate-form .ant-input-outlined:focus {
+    background-color: transparent;
+    border: 1px solid var(--color-primary) !important; 
+  }
+  
+  /* Hover Input */
+  .adminCreate-form .ant-input-outlined:hover:not(:focus) {
+    background-color: transparent;
+    border: 1px solid var(--color-primary) !important; 
+  } 
+  
+  /* Placeholder styling */
+  .adminCreate-form .ant-input-outlined::placeholder,
+  .adminCreate-form .ant-input-affix-wrapper > input.ant-input::placeholder {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+  }
+  
+  .adminCreate-form .anticon svg {
+    color: var(--color-text-primary);
+  }
+  
+  /* Error Input */
+  .adminCreate-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+  .adminCreate-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+  .adminCreate-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+  .adminCreate-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+  .adminCreate-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus),
+  .adminCreate-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus) {
+    background: transparent;
+    border: 1px solid var(--color-error);
+  }
+  
+  /* Focus Error Input */
+  .adminCreate-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus,
+  .adminCreate-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus {
+    background: transparent;
+    border: 1px solid var(--color-error) !important;
+  }
+  
+  /* Focus Input & Input.Password */
+  .adminCreate-form .ant-input-affix-wrapper.ant-input-password.ant-input-outlined:focus {
+    background-color: transparent;
+    border: 1px solid var(--color-primary)  !important; 
+  }
+  
+  .adminCreate-form .ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    content: ""
+  }
+  
+  /* Select */
+  .adminCreate-form .ant-select {
+    background-color: var(--color-background-fifth) !important;
+    color: var(--color-text-primary); 
+    border: 1px solid var(--color-background-fifth) !important; 
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 8px 10px;
+    transition: border 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .adminCreate-form .ant-select-single {
+    height: auto;
+  }
+  
+  /* Selector */
+  .adminCreate-form .ant-select-selector {
+    background-color: transparent !important; 
+    border: none !important; 
+    box-shadow: none !important; 
+    height: auto !important;
+    color: var(--color-text-primary) !important; 
+    display: flex;
+    align-items: center; 
+    padding: 0 10px; 
+  }
+  
+  .adminCreate-form .ant-select-selection-item{
+    font-size: 18px;
+  }
+  
+  .adminCreate-form .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    color: var(--color-text-secondary);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  /* Dropdown*/
+  .adminCreate-form .ant-select-dropdown {
+    background-color: var(--color-background-fifth) !important; 
+  }
+  
+  .adminCreate-form .ant-select-item-option{
+    color: var(--color-text-primary) !important; 
+    font-size: 16px !important; 
+  }
+  
+  .adminCreate-form .ant-select-item-option-active {
+    background-color: var(--color-secondary) !important; 
+  }
+  
+  .adminCreate-form .ant-select-item-option-selected {
+    background-color: var(--color-secondary) !important; 
+  }
+  
+  .adminCreate-form .ant-select-focused:not(.ant-select-disabled) {
+    border-color: var(--color-primary) !important; 
+  }
+  
+  .adminCreate-form .ant-select:hover {
+    border-color: var(--color-primary) !important; 
+  }
+  
+  /* Select Input */
+  .adminCreate-form .ant-select,
+  .adminCreate-form .ant-input {
+    width: 100%;
+  }
+  
+  .adminCreate-form .ant-row .ant-col {
+    padding: 0;
+  }
+  
+  .adminCreate-form .ant-select-focused:not(.ant-select-disabled) .ant-select-selector,
+  .adminCreate-form .ant-input:focus {
+    outline: none;
+    border-color: var(--color-primary); 
+  }
+  
+  
+  /* Styling Radio Group */
+  .adminCreate-form .ant-radio-wrapper {
+    font-size: 18px;
+    color: var(--color-text-primary) ; 
+  }
+  
+  /* Hover  Radio */
+  .adminCreate-form .ant-radio-wrapper:hover .ant-radio-inner {
+    border-color: var(--color-secondary); 
+  }
+  
+  /* Radio  */
+  .adminCreate-form .ant-radio-checked .ant-radio-inner {
+    border-color: var(--color-primary); 
+    background-color: var(--color-primary); 
+  }
+  
+  /*  Radio */
+  .adminCreate-form .ant-radio-inner {
+    border-width: 2px;
+    border-color: var(--color-text-primary);
+  }
+  
+  
+  /* Error Explain */
+  .adminCreate-form .ant-form-item-explain-error {
+    color: var(--color-error);
+    font-size: 16px;
+  }
+  
+  .adminCreate-custom-form .ant-form-item-label > label {
+    color: var(--color-text-primary);
+    font-size: 16px;
+    font-weight: bold;
+    content: "";
+    display: block;
+  }
+  
+  .adminCreate-button {
+    width: 100%;
+    height: auto;
+    padding: 12px 0;
+    background-color: var(--color-primary) !important;
+    color: var(--color-fouth) !important;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adminCreate-button:hover {
+    font-size: 19px;
+  }
+  
+  .adminCreate-form .ant-radio-wrapper-checked .ant-radio-inner {
+    border-color: var(--color-primary) !important;
+    background-color: var(--color-primary) !important;
+  }
+  
+  .adminCreate-form .ant-radio-wrapper-checked .ant-radio-inner:after {
+    background-color: var(--color-fouth) !important;
+  }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values-night/colors.xml -->
+<resources>
+
+    <color name="textColor">#FFFFFF</color>
+    <color name="textTitle">#d14706</color>
+    <color name="textColorFilm">#FFFFFF</color>
+    <color name="textRating">#E19006</color>
+    <color name="textSecondary">#E09B7B</color>
+    <color name="textHint">#682303</color>
+    <color name="textUser">#F6DED3</color>
+    <color name="themeMainColor">#000000</color>
+    <color name="themeDetailColor">#444444</color>
+    <color name="buttonText">#F6DED3</color>
+    <color name="button">#d14706</color>
+    <color name="textAccent">#B0B0B0</color>
+</resources>

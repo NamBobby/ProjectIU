@@ -1,0 +1,95 @@
+.song-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+  gap: 20px;
+  padding: 50px;
+}
+
+.song {
+  position: relative;
+  display: flex;
+  width: 400px;
+  height: 70px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: var(--color-background-accent); 
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.song:hover {
+  background-color: var(--color-hover-secondary); 
+}
+.song-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+/* Placeholder when no image is provided */
+.song-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  object-fit: cover;
+}
+
+.song-placeholder-icon {
+  width: 100%;
+  height: auto;
+}
+
+/* Song info */
+.song-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.song-name {
+  font-weight: bold;
+  color: var(--color-text-primary);
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-artist {
+  font-size: 12px;
+  margin-top: 5px;
+  color: var(--color-text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Hover Icon */
+.song-icon {
+  position: absolute;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.song-hover-icon {
+  font-size: 36px;
+  margin: 10px 15px auto;
+}
+
+.song-wrapper .anticon svg {
+  color: var(--color-fouth) !important; 
+}
+
+.song:hover .song-hover-icon {
+  display: block; 
+}

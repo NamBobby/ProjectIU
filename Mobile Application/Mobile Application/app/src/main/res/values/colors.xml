@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorOnSurface">#333333</color>
+    <color name="colorThird">#28292b</color>
+    <color name="colorError">#E32505</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#989797</color>
+    <color name="colorAccent">#ADD8E6</color>
+    <color name="main_color">#252b45</color>
+    <color name="colorPrimary">#682303</color>
+    <color name="colorPrimaryVariant">#7B7B7B</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#E09B7B</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="textTitle">#d14706</color>
+    <color name="textColor">#000000</color>
+    <color name="textHint">#682303</color>
+    <color name="textPrimary">#E09B7B</color>
+    <color name="textSecondary">#E09B7B</color>
+    <color name="textAccent">#B0B0B0</color>
+    <color name="textUser">#E09B7B</color>
+    <color name="textColorFilm">#000000</color>
+    <color name="textRating">#E19006</color>
+    <color name="themeMainColor">#F0F0F0</color>
+    <color name="themeDetailColor">#F0F0F0</color>
+    <color name="button">#d14706</color>
+    <color name="buttonText">#000000</color>
+</resources>

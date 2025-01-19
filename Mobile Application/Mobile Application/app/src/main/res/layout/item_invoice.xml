@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/filmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/film_name"
+                android:textSize="24sp"
+                android:textColor="@color/textTitle"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textSize="18sp"
+                android:textColor="@color/textSecondary" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/seats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seats"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/cinemaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cinema_id"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/barcode"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,114 @@
+.albumuser-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    white-space: nowrap; 
+  }
+  
+  .albumuser {
+    position: relative;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    background-color: var(--color-background-accent);
+    color: var(--color-text-primary);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .albumuser:hover {
+    transform: scale(1.05);
+    background-color: var(--color-hover-accent);
+  }
+  
+  /* albumuser image */
+  .albumuser-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+  
+  /* Placeholder when no image is provided */
+  .albumuser-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 240px;
+    font-size: 40px;
+  }
+  
+  .albumuser-placeholder-icon {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* albumuser info */
+  .albumuser-info {
+    padding: 10px;
+  }
+  
+  .albumuser-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .albumuser-artist {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+  }
+  
+  /* Hover Icon */
+  .albumuser-icon {
+    position: absolute;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    top: 62%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+
+  .albumuser-hover-icon {
+    font-size: 36px;
+    margin: 10px 15px auto;
+  }
+
+  .albumuser-hover-icon svg {
+    color: var(--color-fouth) !important; 
+  }
+
+  
+  .albumuser:hover .albumuser-hover-icon {
+    display: block; 
+  }
+
+  .albumuser-delete-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease;
+  }
+
+  .albumuser-delete-icon svg{
+    color: var(--color-error) !important;
+  }
+
+  .albumuser:hover .albumuser-delete-icon {
+    transform: scale(1.2);
+  }
+  
+  .albumuser:hover .albumuser-delete-icon:hover {
+    font-size: 28px;
+  }
+  
+  

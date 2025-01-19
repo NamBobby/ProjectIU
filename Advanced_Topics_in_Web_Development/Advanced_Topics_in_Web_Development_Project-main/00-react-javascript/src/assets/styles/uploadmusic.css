@@ -1,0 +1,312 @@
+.upload-container {
+  display: flex;
+  align-items: center;
+  max-height: calc(90vh - 60px); 
+  overflow-y: auto;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.upload-box {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: center;
+  max-height: 70vh;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.upload-navigation{
+  width: 650px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.upload-logo{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-background-fouth);
+  padding-left: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.upload-logo svg{
+  color: var(--color-text-secondary) !important;
+}
+
+.upload-logo:hover{
+  background-color: var(--color-hover-accent) !important;
+}
+
+.upload-logo:hover svg{
+  color: var(--color-primary) !important;
+}
+
+.back-icon {
+  font-size: 28px;
+  margin-right: 12px;
+}
+
+.upload-form {
+  width: 100%;
+}
+
+.upload-title {
+  color: var(--color-secondary);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.thumbnail-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.thumbnail-frame {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--color-text-secondary);
+  z-index: 1;
+}
+
+.thumbnail-frame:hover {
+  border: 2px solid var(--color-secondary);
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail-upload-button {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-hover-secondary);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.thumbnail-upload-button:hover {
+  background-color: var(--color-hover-secondary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.thumbnail-frame:hover .thumbnail-upload-button {
+  display: block !important;
+}
+
+
+.upload-form .ant-input,
+.upload-form .ant-radio-wrapper {
+  color: var(--color-text-primary);
+}
+
+
+.custom-upload-form .ant-form-item-label > label {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: bold;
+  content: "";
+  display: block;
+}
+
+.upload-button {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  background-color: var(--color-primary) !important;
+  color: var(--color-fouth) !important;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-form .anticon svg {
+  color: var(--color-text-primary);
+}
+
+/* Input */
+.upload-form .ant-input-outlined,
+.upload-form .ant-input-outlined:not(:focus) {
+  background-color: var(--color-background-fifth) !important;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-background-fifth) !important; 
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  transition: border 0.3s ease; 
+}
+
+.upload-form .ant-input-outlined:focus {
+  background-color: transparent;
+  border: 1px solid var(--color-primary) !important; 
+}
+
+/* Hover  Input */
+.upload-form .ant-input-outlined:hover:not(:focus) {
+  background-color: transparent;
+  border: 1px solid var(--color-primary) !important; 
+} 
+
+/* Placeholder styling */
+.upload-form .ant-input-outlined::placeholder,
+.upload-form .ant-input-affix-wrapper > input.ant-input::placeholder {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.upload-form .ant-upload-icon .anticon svg {
+  color: var(--color-text-primary);
+  font-size: 24px;
+}
+
+/* Error Input */
+.upload-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.upload-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.upload-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+.upload-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+.upload-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus),
+.upload-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus) {
+  background: transparent;
+  border: 1px solid var(--color-error);
+}
+
+/* Focus Error Input  */
+.upload-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus,
+.upload-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus {
+  background: transparent;
+  border: 1px solid var(--color-error) !important;
+}
+
+/* Focus  Input  */
+.upload-form .ant-input-affix-wrapper.ant-input-password.ant-input-outlined:focus {
+  background-color: transparent;
+  border: 1px solid var(--color-primary) !important; 
+}
+
+.upload-form .ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  content: ""
+}
+
+/*  Select */
+.upload-form .ant-select {
+  background-color: var(--color-background-fifth) !important;
+  color: var(--color-text-primary); 
+  border: 1px solid var(--color-background-fifth) !important; 
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 8px 10px;
+  transition: border 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.upload-form .ant-select:hover {
+  border-color: var(--color-primary) !important;
+}
+
+.upload-form .ant-select:focus {
+  border-color: var(--color-primary) !important;
+}
+
+.upload-form .ant-select-single {
+  height: auto;
+}
+
+/* Selector */
+.upload-form .ant-select-selector {
+  background-color: transparent !important; 
+  border: none !important; 
+  box-shadow: none !important; 
+  height: auto !important;
+  color: var(--color-text-primary) !important; 
+  display: flex;
+  align-items: center; 
+  padding: 0 10px; 
+}
+
+.upload-form .ant-select-selection-item{
+  font-size: 18px;
+}
+
+.upload-form .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.upload-form .ant-select,
+.upload-form .ant-input {
+  width: 100%;
+}
+
+.upload-form .ant-row .ant-col {
+  padding: 0;
+}
+
+
+.upload-form .ant-select-focused:not(.ant-select-disabled) .ant-select-selector,
+.upload-form .ant-input:focus {
+  outline: none;
+  border-color: var(--color-primary); 
+}
+
+
+.upload-form .ant-form-item-explain-error {
+  color: var(--color-error);
+  font-size: 16px;
+}
+
+.upload-form .ant-form-item-label > label {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: bold;
+  content: "";
+  display: block;
+}
+
+.upload-button:hover {
+  font-size: 19px;
+}
+
+.ant-upload-list-item {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  justify-content: space-between;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--color-text-primary)
+}
+
+.ant-upload-list-item-name {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.ant-upload-list-item-actions {
+  margin-left: 10px;
+}

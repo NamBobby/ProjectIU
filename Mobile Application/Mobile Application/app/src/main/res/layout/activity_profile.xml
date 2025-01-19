@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeMainColor"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.ProfileActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/chipNavigationBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/information"
+                android:textColor="@color/textTitle"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/email"
+                android:textColor="@color/textUser"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/username"
+                android:textColor="@color/textUser"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etOldPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/old_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/textHint"
+                android:textSize="18sp"
+                tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/etNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/new_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/textHint"
+                android:textSize="18sp"
+                tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/etNewPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/confirm_new_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/textHint"
+                android:textSize="18sp"
+                tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22sp"
+                android:backgroundTint="@color/button"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/change_password"
+                android:textColor="@color/buttonText"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/button"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/logout"
+                android:textColor="@color/buttonText"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/chipNavigationBar"
+        layout="@layout/chip_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

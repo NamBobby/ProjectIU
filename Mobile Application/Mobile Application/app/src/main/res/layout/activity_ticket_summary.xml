@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/themeMainColor"
+    tools:context=".activities.TicketSummaryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonConfirm"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/themeMainColor"
+           >
+
+            <TextView
+                android:id="@+id/textViewFilmTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/film_title"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/textTitle"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:id="@+id/textViewShowDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_date"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewShowTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_time"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewSeats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seats"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewCinemaHall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cinema_hall"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_price"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:layout_marginBottom="100dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:textSize="18sp"
+        android:textColor="@color/buttonText"
+        android:backgroundTint="@color/button"
+        app:layout_constraintTop_toBottomOf="@id/cardViewInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Nút hủy -->
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="18sp"
+        android:textColor="@color/buttonText"
+        android:backgroundTint="@color/button"
+        app:layout_constraintTop_toBottomOf="@id/buttonConfirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

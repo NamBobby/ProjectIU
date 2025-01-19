@@ -1,0 +1,188 @@
+.login-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-navigation{
+  width: 650px;
+  margin-bottom: 20px;
+}
+
+.login-logo{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-background-fouth);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-top: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.login-logo svg{
+  color: var(--color-text-secondary) !important;
+}
+
+.login-logo:hover{
+  background-color: var(--color-hover-accent) !important;
+}
+
+.login-logo:hover svg{
+  color: var(--color-primary) !important;
+}
+
+.back-icon {
+  font-size: 28px;
+  margin-right: 12px;
+}
+
+p {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 650px;
+  height: 60%;
+  max-height: 500px;
+  display: flex;
+  padding: 20px;
+  background-color: var(--color-background-secondary);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 80%;
+}
+
+.login-title {
+  color: var(--color-secondary);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input (Email) & Input.Password */
+.login-form .ant-input-outlined,
+.login-form .ant-input-outlined:not(:focus) {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-fifth);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  transition: border 0.3s ease; 
+}
+
+/* Focus Input & Input.Password */
+.login-form .ant-input-outlined:focus {
+  background-color: transparent;
+  border: 1px solid var(--color-primary); 
+}
+
+/* Hover Input */
+.login-form .ant-input-outlined:hover:not(:focus){
+  background-color: transparent;
+  border: 1px solid var(--color-primary); 
+} 
+
+/* Placeholder styling */
+.login-form .ant-input-outlined::placeholder,
+.login-form .ant-input-affix-wrapper > input.ant-input::placeholder {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.login-form .anticon svg {
+  color: var(--color-text-primary);
+}
+
+/* Error Input */
+.login-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.login-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.login-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+.login-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+.login-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus),
+.login-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus) {
+  background: transparent;
+  border: 1px solid var(--color-error);
+}
+
+/* Focus Error Input */
+.login-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus,
+.login-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus {
+  background: transparent;
+  border: 1px solid var(--color-error) !important;
+}
+
+/* Focus Input & Input.Password */
+.login-form .ant-input-affix-wrapper.ant-input-password.ant-input-outlined:focus{
+  background-color: transparent;
+  border: 1px solid var(--color-primary) !important; 
+}
+
+.login-form .ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  content: ""
+}
+
+.login-form .ant-form-item-explain-error {
+  color: var(--color-error);
+  font-size: 16px;
+}
+
+.custom-form .ant-form-item-label > label {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: bold;
+  content: "";
+  display: block;
+}
+
+.login-button {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  background-color: var(--color-primary) !important;
+  color: var(--color-fouth) !important;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  font-size: 19px;
+}
+
+.forgot-password-link,
+.signup-link {
+  color: var(--color-text-primary);
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover,
+.signup-link:hover {
+  color: var(--color-primary);
+}
+
+.login-links {
+  text-align: center;
+  margin-top: 10px;
+}

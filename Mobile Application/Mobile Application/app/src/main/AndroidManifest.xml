@@ -1,0 +1,76 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        tools:targetApi="31">
+
+        <!-- Khai báo các Activity với thuộc tính theme và exported -->
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:theme="@style/Base.Theme.Project"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/Base.Theme.Project"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.SeatListActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Project"/>
+
+        <activity
+            android:name=".activities.FilmDetailActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Project"/>
+
+        <activity
+            android:name=".activities.IntroActivity"
+            android:exported="true"
+            android:theme="@style/Base.Theme.Project">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/Base.Theme.Project"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.TicketSummaryActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Project"/>
+
+        <activity
+            android:name=".activities.InvoiceActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Project"/>
+
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:theme="@style/Base.Theme.Project"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".activities.CartActivity"
+            android:theme="@style/Base.Theme.Project"
+            android:exported="false" />
+    </application>
+</manifest>

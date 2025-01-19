@@ -1,0 +1,88 @@
+.artist-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    justify-items: flex-start;
+  }
+  
+  .artist {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: var(--color-text-primary);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .artist:hover {
+    transform: scale(1.05);
+  }
+
+  .artist-info {
+    padding: 10px;
+  }
+  
+  .artist-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .artist-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .artist-role {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+  }
+
+  /* Placeholder when no image is provided */
+  .artist-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    font-size: 40px;
+    margin: auto;
+    object-fit: cover;
+  }
+  
+  .artist-placeholder-icon {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+   /* Hover Icon */
+   .artist-icon {
+    position: absolute;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .artist-hover-icon {
+    font-size: 36px;
+    margin: 10px 15px auto;
+  }
+
+  .artist-wrapper .anticon svg {
+    color: var(--color-fouth) !important; 
+  }
+  
+  .artist:hover .artist-hover-icon {
+    display: block; 
+  }
+  
+  

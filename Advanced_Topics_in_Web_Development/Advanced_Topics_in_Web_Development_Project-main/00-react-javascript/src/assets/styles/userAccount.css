@@ -1,0 +1,348 @@
+.user-account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-background-primary);
+  flex-direction: column;
+}
+
+p {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.user-account-navigation{
+  width: 650px;
+  margin-bottom: 20px;
+}
+
+.user-account-logo{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-background-fouth);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.user-account-logo svg{
+  color: var(--color-text-secondary) !important;
+}
+
+.user-account-logo:hover{
+  background-color: var(--color-hover-accent) !important;
+}
+
+.user-account-logo:hover svg{
+  color: var(--color-primary) !important;
+}
+
+.back-icon {
+  font-size: 28px;
+  margin-right: 12px;
+}
+
+.user-account-box {
+  width: 100%;
+  max-width: 650px;
+  max-height: 700px;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: var(--color-background-secondary);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.user-account-title {
+  color: var(--color-secondary);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-account-toggle-password-form {
+  color: var(--color-text-primary);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.user-account-toggle-password-form:hover {
+  color: var(--color-primary);
+}
+
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar-frame {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-text-secondary);
+  z-index: 1;
+}
+
+.avatar-frame:hover {
+  border: 2px solid var(--color-secondary);
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-upload-button {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-hover-secondary);
+  color: var(--color-text-primary);
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.avatar-upload-button:hover {
+  background-color: var(--color-hover-secondary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.avatar-frame:hover .avatar-upload-button {
+  display: block !important;
+}
+
+.user-account-form .ant-input,
+.user-account-form .ant-radio-wrapper {
+  color: var(--color-text-primary);
+}
+
+.user-account-button {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  background-color: var(--color-primary) !important;
+  color: var(--color-fouth) !important;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.readonly-input {
+  border: 1px solid var(--color-accent) !important;
+  color: var(--color-text-secondary) !important;
+  cursor: not-allowed;
+}
+.readonly-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* Input */
+.user-account-form .ant-input-outlined,
+.user-account-form .ant-input-outlined:not(:focus) {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-fifth);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  transition: border 0.3s ease;
+}
+
+/* Focus  Input  */
+.user-account-form .ant-input-outlined:focus {
+  background-color: transparent;
+  border: 1px solid var(--color-primary); 
+}
+
+/* Hover Input */
+.user-account-form .ant-input-outlined:hover:not(:focus) {
+  background-color: transparent;
+  border: 1px solid var(--color-primary); 
+} 
+
+/* Placeholder styling */
+.user-account-form .ant-input-outlined::placeholder,
+.user-account-form .ant-input-affix-wrapper > input.ant-input::placeholder {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.user-account-form .anticon svg {
+  color: var(--color-text-primary);
+}
+
+/* Error Input */
+.user-account-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.user-account-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.user-account-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+.user-account-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+.user-account-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus),
+.user-account-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus) {
+  background: transparent;
+  border: 1px solid var(--color-error);
+}
+
+/* Focus Error Input */
+.user-account-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus,
+.user-account-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus {
+  background: transparent;
+  border: 1px solid var(--color-error) !important;
+}
+
+/* Focus Input */
+.user-account-form .ant-input-affix-wrapper.ant-input-password.ant-input-outlined:focus {
+  background-color: transparent;
+  border: 1px solid var(--color-primary) !important; 
+}
+
+.user-account-form .ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  content: ""
+}
+
+/* Select */
+.user-account-form .ant-select {
+  background-color: transparent;
+  color: var(--color-text-primary); 
+  border: 1px solid var(--color-fifth); 
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 8px 10px;
+  transition: border 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.user-account-form .ant-select-single {
+  height: auto;
+}
+
+/* Selector */
+.user-account-form .ant-select-selector {
+  background-color: transparent !important; 
+  border: none !important; 
+  box-shadow: none !important; 
+  height: auto !important;
+  color: var(--color-text-primary) !important; 
+  display: flex;
+  align-items: center; 
+  padding: 0 10px; 
+}
+
+.user-account-form .ant-select-selection-item{
+  font-size: 18px;
+}
+
+.user-account-form .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Select Input */
+.user-account-form .ant-select,
+.user-account-form .ant-input {
+  width: 100%;
+}
+
+.user-account-form .ant-row .ant-col {
+  padding: 0;
+}
+
+.user-account-form .ant-select-focused:not(.ant-select-disabled) .ant-select-selector,
+.user-account-form .ant-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+
+/* Styling Radio Group */
+.user-account-form .ant-radio-wrapper {
+  font-size: 18px;
+  color: var(--color-text-primary);
+}
+
+/* Hover Radio */
+.user-account-form .ant-radio-wrapper:hover .ant-radio-inner {
+  border-color: var(--color-secondary); 
+}  
+
+/* Radio */
+.user-account-form .ant-radio-checked .ant-radio-inner {
+  border-color: var(--color-primary); 
+  background-color: var(--color-primary); 
+}
+
+/* Radio  */
+.user-account-form .ant-radio-inner {
+  border-width: 2px;
+  border-color: var(--color-text-primary);
+}
+
+
+/* Error */
+.user-account-form .ant-form-item-explain-error {
+  color: var(--color-error);
+  font-size: 16px;
+}
+
+.useraccount-form .ant-form-item-label > label {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: bold;
+  content: "";
+  display: block;
+}
+
+.user-account-button {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  background-color: var(--color-primary) !important;
+  color: var(--color-fouth) !important;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-account-button:hover {
+  font-size: 19px;
+}
+
+.user-account-form .ant-radio-wrapper-checked .ant-radio-inner {
+  border-color: var(--color-primary) !important;
+  background-color: var(--color-primary) !important;
+}
+
+.user-account-form .ant-radio-wrapper-checked .ant-radio-inner:after {
+  background-color: var(--color-fouth)  !important;
+}
