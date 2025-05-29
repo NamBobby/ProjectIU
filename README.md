@@ -1,5 +1,5 @@
-# ProjectIU
-All Project in HCM International University
+# Project IU and UWE
+All Project in HCM International University - VNU (IU-VNU) and University of the West of England (UWE)
 
 DSA: Algorithms & Data Structures Project 
 
