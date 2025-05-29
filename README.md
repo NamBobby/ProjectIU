@@ -59,7 +59,7 @@ Project required using a unique dataset to investigate the insider threat (secur
 
 BDA: Big Data Analytics 
 
-Project required training a machine learning model to classify user emotion and intent from chatbot prompts. Visualized results using ReactJS, Node.js, and Flask..
+Project required training a machine learning model to classify user emotion and intent from chatbot prompts. Visualized results using ReactJS, Node.js, and Flask.
 
 Topic: AI-powered chatbots for customer service analytics
 
