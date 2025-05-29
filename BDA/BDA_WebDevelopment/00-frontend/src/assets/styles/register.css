@@ -1,0 +1,300 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-background-primary);
+  flex-direction: column;
+}
+
+p {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.register-navigation{
+  width: 650px;
+  margin-bottom: 20px;
+}
+
+.register-logo{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-background-fouth);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-top: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.register-logo svg{
+  color: var(--color-text-secondary) !important;
+}
+
+.register-logo:hover{
+  background-color: var(--color-hover-accent) !important;
+}
+
+.register-logo:hover svg{
+  color: var(--color-primary) !important;
+}
+
+.back-icon {
+  font-size: 28px;
+  margin-right: 12px;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 650px;
+  max-height: 700px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--color-background-secondary);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.register-form {
+  width: 80%;
+}
+
+.register-title {
+  color: var(--color-secondary);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input (Email) & Input.Password */
+.register-form .ant-input-outlined,
+.register-form .ant-input-outlined:not(:focus) {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-fifth);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  transition: border 0.3s ease; 
+}
+
+/* Focus Input & Input.Password */
+.register-form .ant-input-outlined:focus {
+  background-color: transparent;
+  border: 1px solid var(--color-primary); 
+}
+
+/* Hover Input */
+.register-form .ant-input-outlined:hover:not(:focus) {
+  background-color: transparent;
+  border: 1px solid var(--color-primary); 
+} 
+
+/* Placeholder styling */
+.register-form .ant-input-outlined::placeholder,
+.register-form .ant-input-affix-wrapper > input.ant-input::placeholder {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.register-form .anticon svg {
+  color: var(--color-text-primary);
+}
+
+/* Error Input */
+.register-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.register-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled),
+.register-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+.register-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+.register-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus),
+.register-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled).ant-input:hover:not(:focus) {
+  background: transparent;
+  border: 1px solid var(--color-error);
+}
+
+/* Focus Error Input  */
+.register-form .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus,
+.register-form .ant-input-password.ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus {
+  background: transparent;
+  border: 1px solid var(--color-error) !important;
+}
+
+/* Focus Input và Input.Password */
+.register-form .ant-input-affix-wrapper.ant-input-password.ant-input-outlined:focus {
+  background-color: transparent;
+  border: 1px solid var(--color-primary) !important; 
+}
+
+.register-form .ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  content: ""
+}
+
+/* Select */
+.register-form .ant-select {
+  background-color: transparent;
+  color: var(--color-text-primary); 
+  border: 1px solid var(--color-fifth); 
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 8px 10px;
+  transition: border 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.register-form .ant-select-single {
+  height: auto;
+}
+
+/* Selector */
+.register-form .ant-select-selector {
+  background-color: transparent !important; 
+  border: none !important; 
+  box-shadow: none !important; 
+  height: auto !important;
+  color: var(--color-text-primary) !important; 
+  display: flex;
+  align-items: center; 
+  padding: 0 10px; 
+}
+
+.register-form .ant-select-selection-item{
+  font-size: 18px;
+}
+
+.register-form .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Dropdown */
+.ant-select-dropdown {
+  background-color: var(--color-background-fifth) !important; 
+}
+
+.ant-select-item-option{
+  color: var(--color-text-primary) !important; 
+  font-size: 16px !important; 
+}
+
+
+.ant-select-item-option-active {
+  background-color: var(--color-secondary) !important; 
+}
+
+.ant-select-item-option-selected {
+  background-color: var(--color-secondary) !important; 
+}
+
+.ant-select-focused:not(.ant-select-disabled) {
+  border-color: var(--color-primary) !important; 
+}
+
+.ant-select:hover {
+  border-color: var(--color-primary) !important; 
+}
+
+.register-form .ant-select,
+.register-form .ant-input {
+  width: 100%;
+}
+
+.register-form .ant-row .ant-col {
+  padding: 0;
+}
+
+.register-form .ant-select-focused:not(.ant-select-disabled) .ant-select-selector,
+.register-form .ant-input:focus {
+  outline: none;
+  border-color: var(--color-primary); 
+}
+
+
+/* Styling Radio Group */
+.register-form .ant-radio-wrapper {
+  font-size: 18px; 
+  color: var(--color-text-primary) 
+}
+
+/* Hover  Radio */
+.register-form .ant-radio-wrapper:hover .ant-radio-inner {
+  border-color: var(--color-primary);
+}
+
+/* Radio đã chọn */
+.register-form .ant-radio-checked .ant-radio-inner {
+  border-color: var(--color-primary); 
+  background-color: var(--color-primary); 
+}
+
+/* Radio  */
+.register-form .ant-radio-inner {
+  border-width: 2px;
+  border-color: var(--color-text-primary);
+}
+
+
+/* Error Message */
+.register-form .ant-form-item-explain-error {
+  color: var(--color-error);
+  font-size: 16px;
+}
+
+.register-custom-form .ant-form-item-label > label {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: bold;
+  content: "";
+  display: block;
+}
+
+.register-button {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  background-color: var(--color-primary) !important;
+  color: var(--color-fouth) !important;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  font-size: 19px;
+}
+
+.login-link {
+  color: var(--color-text-primary);
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: var(--color-primary);
+}
+
+.register-links {
+  text-align: center;
+}
+
+.register-form .ant-radio-wrapper-checked .ant-radio-inner {
+  border-color: var(--color-primary) !important;
+  background-color: var(--color-primary) !important;
+}
+
+.register-form .ant-radio-wrapper-checked .ant-radio-inner:after {
+  background-color: var(--color-fouth)  !important;
+}

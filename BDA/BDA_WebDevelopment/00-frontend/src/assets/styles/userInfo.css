@@ -1,0 +1,115 @@
+.userinfo-overlay {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-height: calc(90vh - 60px);  
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.userinfo-background {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.avatar-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+
+.userinfo-header-background {
+  position: absolute;
+  top: 25%; 
+  left: 5%;
+  color: #aaa;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.user-artist-role{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userinfo-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 25px;
+}
+
+/* User role and name styling */
+.user-role {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.user-name {
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+/* Content container */
+.userinfo-content {
+  width: 100%;
+  background-color: var(--color-background-secondary);
+  overflow-y: auto;
+  padding: 20px;
+}
+
+
+.userinfo-logo{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-background-fouth);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 11.5px;
+  padding-top: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.userinfo-logo:hover{
+  background-color: var(--color-background-accent) !important;
+}
+
+.userinfo-logo svg{
+  color: var(--color-text-secondary) !important;
+}
+
+.userinfo-logo svg:hover{
+  color: var(--color-primary) !important;
+}
+
+.userinfo-upload-icon {
+  font-size: 28px;
+  margin-right: 10px;
+}
+

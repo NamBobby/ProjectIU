@@ -1,0 +1,10 @@
+01-backend/01B-flask/.env
+01-backend/01B-flask/__pycache__/
+01-backend/01B-flask/models/chatbot_model.pkl
+01-backend/01B-flask/models/sentiment_model.pkl
+01-backend/01B-flask/models/label_encoder.pkl
+01-backend/01B-flask/models/sentiment_label_encoder.pkl
+01-backend/01B-flask/database/response_mapping.csv
+01-backend/01B-flask/.DS_Store
+01-backend/.DS_Store
+.DS_Store

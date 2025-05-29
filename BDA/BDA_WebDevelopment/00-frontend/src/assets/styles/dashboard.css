@@ -1,0 +1,117 @@
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-container h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+  color: var(--color-text-primary);
+}
+
+.dashboard-subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+}
+
+.dashboard-loading,
+.dashboard-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.sentiment-tag {
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.sentiment-tag.positive {
+  background-color: var(--color-accent);
+  color: var(--color-fifth);
+}
+
+.sentiment-tag.negative {
+  background-color: var(--color-sixth);
+  color: var(--color-fifth);
+}
+
+.sentiment-tag.neutral {
+  background-color: var(--color-text-secondary);
+  color: var(--color-fifth);
+}
+
+.ant-card {
+  background-color: var(--color-background-fifth);
+  border: 1px solid var(--color-border);
+}
+
+.ant-card-head {
+  background-color: var(--color-background-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ant-card-head-title {
+  color: var(--color-text-accent);
+}
+
+.ant-statistic-title {
+  color: var(--color-text-accent);
+}
+
+.ant-statistic-content {
+  color: var(--color-text-primary);
+}
+
+/* Add specific classes for dashboard cards and statistics */
+.dashboard-card .ant-card-head-title {
+  color: var(--color-text-accent);
+}
+
+.dashboard-statistic .ant-statistic-title,
+.dashboard-statistic .ant-statistic-content {
+  color: var(--color-text-accent);
+}
+
+.ant-table {
+  background-color: var(--color-background-fifth);
+}
+
+.ant-table-thead > tr > th {
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: var(--color-background-secondary);
+}
+
+.ant-pagination-item {
+  background-color: var(--color-background-fifth);
+  border: 1px solid var(--color-border);
+}
+
+.ant-pagination-item a {
+  color: var(--color-text-primary);
+}
+
+.ant-pagination-item-active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.ant-pagination-item-active a {
+  color: var(--color-text-primary);
+}
