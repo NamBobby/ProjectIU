@@ -1,0 +1,46 @@
+{
+  "emotions": {
+    "sad": [
+      "Sadness is characterized by low energy, reduced motivation, and decreased levels of serotonin and dopamine. The right nutrients can help support your emotional well-being.",
+      "When feeling sad, your body benefits from nutrients that provide 'emotional stimulation' and biochemical support for neurotransmitter production.",
+      "Sadness can affect your brain chemistry. Certain nutrients can help restore balance to mood-regulating neurotransmitters like serotonin."
+    ],
+    "happy": [
+      "Happiness represents a state of biochemical harmony. The right nutrients can help maintain this positive emotional state.",
+      "When you're feeling happy, your body can benefit from nutrients that sustain this positive biochemical balance.",
+      "A happy mood is supported by nutrients that reinforce serotonin production and stabilize emotional regulation pathways."
+    ],
+    "fear": [
+      "Fear activates defensive neural mechanisms and triggers oxidative stress. Certain nutrients can help calm and restore balance.",
+      "When experiencing fear, your body needs nutrients that can reduce anxiety through GABA enhancement and stress hormone regulation.",
+      "Fear states involve heightened neurological excitability and physiological stress responses that can be modulated with specific nutrients."
+    ],
+    "neutral": [
+      "A neutral emotional state needs maintenance of positive baseline emotions to prevent negative fluctuations.",
+      "While emotionally stable, your neutral state benefits from nutrients that provide steady energy and support neurotransmitter synthesis.",
+      "The neutral state requires a balance of nutrients that foster calm alertness and cognitive clarity."
+    ],
+    "surprise": [
+      "Surprise lies between fear and joy, temporarily throwing the brain out of balance as it adapts to new information.",
+      "The surprised state requires a balance between stabilization and light modulation of brain chemistry.",
+      "Surprise increases adrenaline slightly and changes heart rate, requiring nutrients that support both alertness and emotional regulation."
+    ],
+    "disgust": [
+      "Disgust is a self-protective mechanism that can affect the gut-brain connection and requires both calming and gentle reactivation.",
+      "When feeling disgust, your body benefits from nutrients that restore gut comfort and support the gut-brain axis.",
+      "Disgust responses can be eased with nutrients that reduce visceral tension and support mucosal health."
+    ],
+    "angry": [
+      "Anger triggers the sympathetic nervous system, increasing cortisol, heart rate, and blood pressure—harmful if prolonged.",
+      "When angry, your body needs nutrients that can calm the nervous system and reduce the physiological impact of stress hormones.",
+      "Anger creates a physiological stress response that certain nutrients can help regulate, supporting emotional de-escalation."
+    ]
+  },
+  "food_recommendations": [
+    "{food_name} contains {nutrients} that can help address the biochemical needs of your body when experiencing {emotion}.",
+    "This {food_type} is rich in {nutrients}, which research shows can support emotional regulation during {emotion} states.",
+    "The {nutrients} in {food_name} help balance neurotransmitters associated with {emotion}, potentially easing this emotional state.",
+    "Research indicates that {food_name} contains {nutrients} that support brain function during {emotion} states by regulating key biochemical pathways.",
+    "This {food_type} provides {nutrients} that can help restore neurochemical balance during periods of {emotion}."
+  ]
+}

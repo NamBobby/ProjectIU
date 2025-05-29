@@ -1,0 +1,210 @@
+import { StyleSheet } from "react-native";
+
+const AdminDashboardStyle = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F9FAFB',
+  },
+  header: {
+    backgroundColor: '#F9FAFB',
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E5E7EB',
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#111827',
+  },
+  scrollView: {
+    flex: 1,
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F9FAFB',
+  },
+  loadingText: {
+    marginTop: 12,
+    fontSize: 16,
+    color: '#6B7280',
+  },
+  errorContainer: {
+    padding: 16,
+    backgroundColor: '#FEF2F2',
+    marginHorizontal: 16,
+    marginTop: 16,
+    borderRadius: 8,
+    borderLeftWidth: 4,
+    borderLeftColor: '#EF4444',
+  },
+  errorText: {
+    color: '#B91C1C',
+    fontSize: 14,
+  },
+  summaryContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+  },
+  summaryCard: {
+    backgroundColor: 'white',
+    borderRadius: 8,
+    padding: 16,
+    alignItems: 'center',
+    width: '31%',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+  summaryValue: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: '#111827',
+    marginTop: 8,
+  },
+  summaryLabel: {
+    fontSize: 12,
+    color: '#6B7280',
+    marginTop: 4,
+  },
+  sectionContainer: {
+    backgroundColor: 'white',
+    marginHorizontal: 16,
+    marginTop: 16,
+    marginBottom: 8,
+    borderRadius: 8,
+    padding: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: 16,
+  },
+  emotionContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+  },
+  emotionItem: {
+    width: '31%',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  emotionIconContainer: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+  emotionLabel: {
+    fontSize: 12,
+    color: '#6B7280',
+    marginBottom: 4,
+  },
+  emotionCount: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#111827',
+  },
+  foodItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#F3F4F6',
+  },
+  foodInfo: {
+    flex: 1,
+  },
+  foodName: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: '#111827',
+    marginBottom: 4,
+  },
+  foodMetaContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  emotionBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 12,
+    marginRight: 8,
+  },
+  emotionBadgeText: {
+    fontSize: 10,
+    color: 'white',
+    fontWeight: '500',
+  },
+  foodCount: {
+    fontSize: 12,
+    color: '#6B7280',
+  },
+  foodRating: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#111827',
+  },
+  chartContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 16,
+  },
+  quickLinksContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+  },
+  quickLinkButton: {
+    backgroundColor: '#6EA9F7',
+    borderRadius: 8,
+    paddingVertical: 12,
+    paddingHorizontal: 12,
+    width: '48%',
+    marginBottom: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  quickLinkText: {
+    color: 'white',
+    fontWeight: '500',
+    marginLeft: 8,
+    fontSize: 14,
+  },
+  statRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+    paddingBottom: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#F3F4F6',
+  },
+  statLabel: {
+    fontSize: 14,
+    color: '#6B7280',
+  },
+  statValue: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#111827',
+  }
+});
+
+export default AdminDashboardStyle;

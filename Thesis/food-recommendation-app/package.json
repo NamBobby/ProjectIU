@@ -1,0 +1,12 @@
+{
+    "name": "food-recommendation-app",
+    "version": "1.0.0",
+    "description": "React Native Expo + Flask Backend",
+    "scripts": {
+      "start": "concurrently \"cd 00-frontend && expo start\" \"cd backend && flask run\""
+    },
+    "dependencies": {
+      "concurrently": "^7.0.0",
+      "nodemon": "^2.0.22"
+    }
+}

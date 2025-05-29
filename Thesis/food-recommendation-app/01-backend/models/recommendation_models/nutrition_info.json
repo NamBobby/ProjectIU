@@ -1,0 +1,274 @@
+{
+  "nutrition_priorities": {
+    "sad": [
+      "Polyunsaturated Fats",
+      "Vitamin D",
+      "Protein",
+      "Vitamin B6",
+      "Vitamin B12",
+      "Magnesium",
+      "Zinc"
+    ],
+    "happy": [
+      "Protein",
+      "Carbohydrates",
+      "Vitamin D",
+      "Polyunsaturated Fats",
+      "Magnesium"
+    ],
+    "angry": [
+      "Magnesium",
+      "Vitamin C"
+    ],
+    "disgust": [
+      "Dietary Fiber",
+      "Magnesium",
+      "Zinc",
+      "Vitamin B6"
+    ],
+    "neutral": [
+      "Carbohydrates",
+      "Protein",
+      "Vitamin B1",
+      "Vitamin B2",
+      "Vitamin B3",
+      "Vitamin B5",
+      "Vitamin B6",
+      "Vitamin B12",
+      "Magnesium",
+      "Zinc",
+      "Iron"
+    ],
+    "surprise": [
+      "Carbohydrates",
+      "Vitamin B1",
+      "Vitamin B2",
+      "Vitamin B3",
+      "Vitamin B5",
+      "Vitamin B6",
+      "Vitamin B12",
+      "Protein",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "fear": [
+      "Magnesium",
+      "Polyunsaturated Fats",
+      "Vitamin B6",
+      "Vitamin B12",
+      "Vitamin C"
+    ]
+  },
+  "nutrition_general_limits": {
+    "Caloric Value": {
+      "child": 1800.0,
+      "adult": 3300.0
+    },
+    "Fat": {
+      "child": 70000.0,
+      "adult": 128333.33
+    },
+    "Polyunsaturated Fats": {
+      "child": 3000.0,
+      "adult": 3000.0
+    },
+    "Carbohydrates": {
+      "child": 292500.0,
+      "adult": 536250.0
+    },
+    "Sugars": {
+      "child": 45000.0,
+      "adult": 82500.0
+    },
+    "Protein": {
+      "child": 27000.0,
+      "adult": 71000.0
+    },
+    "Dietary Fiber": {
+      "child": 13000.0,
+      "adult": 30000.0
+    },
+    "Sodium": {
+      "child": 1500.0,
+      "adult": 2000.0
+    },
+    "Vitamin A": {
+      "child": 900.0,
+      "adult": 3000.0
+    },
+    "Vitamin B1": {
+      "child": 0.7,
+      "adult": 1.4
+    },
+    "Vitamin B11": {
+      "child": 0.4,
+      "adult": 1.0
+    },
+    "Vitamin B12": {
+      "child": 0.0015,
+      "adult": 0.003
+    },
+    "Vitamin B2": {
+      "child": 0.7,
+      "adult": 1.7
+    },
+    "Vitamin B3": {
+      "child": 12.0,
+      "adult": 16.0
+    },
+    "Vitamin B5": {
+      "child": 4.0,
+      "adult": 5.0
+    },
+    "Vitamin B6": {
+      "child": 0.9,
+      "adult": 1.7
+    },
+    "Vitamin C": {
+      "child": 50.0,
+      "adult": 100.0
+    },
+    "Vitamin D": {
+      "child": 0.05,
+      "adult": 0.1
+    },
+    "Vitamin E": {
+      "child": 100.0,
+      "adult": 300.0
+    },
+    "Vitamin K": {
+      "child": 0.06,
+      "adult": 0.12
+    },
+    "Calcium": {
+      "child": 1000.0,
+      "adult": 2500.0
+    },
+    "Iron": {
+      "child": 10.0,
+      "adult": 18.0
+    },
+    "Copper": {
+      "child": 0.7,
+      "adult": 0.9
+    },
+    "Magnesium": {
+      "child": 200.0,
+      "adult": 420.0
+    },
+    "Manganese": {
+      "child": 1.5,
+      "adult": 2.3
+    },
+    "Phosphorus": {
+      "child": 800.0,
+      "adult": 1250.0
+    },
+    "Potassium": {
+      "child": 2600.0,
+      "adult": 4700.0
+    },
+    "Zinc": {
+      "child": 12.0,
+      "adult": 40.0
+    }
+  },
+  "all_nutrients": [
+    "Caloric Value",
+    "Fat",
+    "Saturated Fats",
+    "Monounsaturated Fats",
+    "Polyunsaturated Fats",
+    "Carbohydrates",
+    "Sugars",
+    "Protein",
+    "Dietary Fiber",
+    "Cholesterol",
+    "Sodium",
+    "Vitamin A",
+    "Vitamin B1",
+    "Vitamin B11",
+    "Vitamin B12",
+    "Vitamin B2",
+    "Vitamin B3",
+    "Vitamin B5",
+    "Vitamin B6",
+    "Vitamin C",
+    "Vitamin D",
+    "Vitamin E",
+    "Vitamin K",
+    "Calcium",
+    "Iron",
+    "Copper",
+    "Magnesium",
+    "Manganese",
+    "Phosphorus",
+    "Potassium",
+    "Selenium",
+    "Zinc"
+  ],
+  "feature_cols": [
+    "Caloric Value_scaled",
+    "Fat_scaled",
+    "Saturated Fats_scaled",
+    "Monounsaturated Fats_scaled",
+    "Polyunsaturated Fats_scaled",
+    "Carbohydrates_scaled",
+    "Sugars_scaled",
+    "Protein_scaled",
+    "Dietary Fiber_scaled",
+    "Cholesterol_scaled",
+    "Sodium_scaled",
+    "Vitamin A_scaled",
+    "Vitamin B1_scaled",
+    "Vitamin B11_scaled",
+    "Vitamin B12_scaled",
+    "Vitamin B2_scaled",
+    "Vitamin B3_scaled",
+    "Vitamin B5_scaled",
+    "Vitamin B6_scaled",
+    "Vitamin C_scaled",
+    "Vitamin D_scaled",
+    "Vitamin E_scaled",
+    "Vitamin K_scaled",
+    "Calcium_scaled",
+    "Iron_scaled",
+    "Copper_scaled",
+    "Magnesium_scaled",
+    "Manganese_scaled",
+    "Phosphorus_scaled",
+    "Potassium_scaled",
+    "Selenium_scaled",
+    "Zinc_scaled",
+    "interaction_happy_Protein",
+    "interaction_happy_Carbohydrates",
+    "interaction_happy_Vitamin D",
+    "interaction_surprise_Carbohydrates",
+    "interaction_surprise_Vitamin B1",
+    "interaction_surprise_Vitamin B2",
+    "interaction_sad_Polyunsaturated Fats",
+    "interaction_sad_Vitamin D",
+    "interaction_sad_Protein",
+    "interaction_fear_Magnesium",
+    "interaction_fear_Polyunsaturated Fats",
+    "interaction_fear_Vitamin B6",
+    "interaction_angry_Magnesium",
+    "interaction_angry_Vitamin C",
+    "interaction_disgust_Dietary Fiber",
+    "interaction_disgust_Magnesium",
+    "interaction_disgust_Zinc",
+    "interaction_neutral_Carbohydrates",
+    "interaction_neutral_Protein",
+    "interaction_neutral_Vitamin B1",
+    "user_food_preference",
+    "user_emotion_pref",
+    "season_encoded",
+    "season_emotion",
+    "age",
+    "Meal_Type_encoded",
+    "food_type_encoded",
+    "emotion_encoded",
+    "user_id_encoded",
+    "month_encoded"
+  ]
+}
